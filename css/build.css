@@ -190,7 +190,7 @@ a:focus, button:focus, input:focus {
   .select2-container--default .select2-selection--single .select2-selection__arrow:after {
     position: absolute;
     content: '';
-    background: url("../../assets/icons/chevron_down.svg");
+    background: url("../assets/icons/chevron_down.svg");
     background-size: cover;
     border: 0;
     width: 24px;
@@ -295,7 +295,7 @@ a:focus, button:focus, input:focus {
     background: white;
     letter-spacing: -0.1px; }
   .form-input:after {
-    content: url("../../assets/icons/tick--success.svg");
+    content: url("../assets/icons/tick--success.svg");
     position: absolute;
     bottom: 8px;
     right: 13px;
@@ -396,7 +396,7 @@ a:focus, button:focus, input:focus {
   .form-checkbox label:after {
     position: absolute;
     content: '';
-    background: url("../../assets/icons/tick.svg");
+    background: url("../assets/icons/tick.svg");
     background-size: cover;
     width: 13px;
     height: 10px;
@@ -1843,7 +1843,7 @@ body {
       position: absolute;
       width: 338px;
       height: 148px;
-      background: url(../../assets/landing-promo-decor-2.svg);
+      background: url(../assets/landing-promo-decor-2.svg);
       background-repeat: repeat-x;
       background-position-x: 13px;
       top: 235px;
@@ -1854,7 +1854,7 @@ body {
       position: absolute;
       width: 338px;
       height: 148px;
-      background: url(../../assets/landing-promo-decor-2.svg);
+      background: url(../assets/landing-promo-decor-2.svg);
       background-repeat: repeat-x;
       background-position-x: 13px;
       top: 107px;
