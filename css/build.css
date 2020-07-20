@@ -2098,7 +2098,7 @@ body {
       position: absolute;
       width: 338px;
       height: 148px;
-      background: url(../../assets/landing-promo-decor-2.svg);
+      background: url(../assets/landing-promo-decor-2.svg);
       background-repeat: repeat-x;
       background-position-x: 13px;
       top: -75px;
@@ -2109,7 +2109,7 @@ body {
       position: absolute;
       width: 338px;
       height: 148px;
-      background: url(../../assets/landing-promo-decor-2.svg);
+      background: url(../assets/landing-promo-decor-2.svg);
       background-repeat: repeat-x;
       background-position-x: 13px;
       bottom: -88px;
@@ -2209,7 +2209,7 @@ body {
         position: absolute;
         width: 338px;
         height: 148px;
-        background: url(../../assets/landing-promo-decor-2.svg);
+        background: url(../assets/landing-promo-decor-2.svg);
         background-repeat: repeat-x;
         background-position-x: 13px;
         top: 7px;
@@ -2349,7 +2349,7 @@ body {
             top: 0;
             bottom: 0;
             margin: auto;
-            background: url("../../assets/icons/plus-primary.svg");
+            background: url("../assets/icons/plus-primary.svg");
             background-size: cover; }
           .corporation-clients__programs-list__m-link:hover {
             text-decoration: none;
@@ -2359,7 +2359,7 @@ body {
             color: #DD2A1B;
             border-color: transparent; }
             .corporation-clients__programs-list__m-link[aria-expanded=true]:after {
-              background: url("../../assets/icons/minus-primary.svg"); }
+              background: url("../assets/icons/minus-primary.svg"); }
         .corporation-clients__programs-list__list {
           padding: 0 26px 9px;
           margin: 0 -26px;
@@ -2440,7 +2440,7 @@ body {
       position: absolute;
       width: 338px;
       height: 148px;
-      background: url(../../assets/landing-promo-decor-2.svg);
+      background: url(../assets/landing-promo-decor-2.svg);
       background-repeat: repeat-x;
       background-position-x: 13px;
       bottom: 18px;
@@ -2451,7 +2451,7 @@ body {
       position: absolute;
       width: 338px;
       height: 148px;
-      background: url(../../assets/landing-promo-decor-2.svg);
+      background: url(../assets/landing-promo-decor-2.svg);
       background-repeat: repeat-x;
       background-position-x: 13px;
       top: 79px;
@@ -2602,7 +2602,7 @@ body {
           color: #000;
           margin-bottom: 0; }
           .corporation-clients__faq__link:after {
-            content: url("../../assets/icons/plus-primary.svg");
+            content: url("../assets/icons/plus-primary.svg");
             margin-left: auto; }
           .corporation-clients__faq__link[aria-expanded="true"] {
             pointer-events: auto;
@@ -2611,7 +2611,7 @@ body {
               border-bottom: 1px solid #DFDFDF;
               padding-bottom: 17px; }
             .corporation-clients__faq__link[aria-expanded="true"]:after {
-              content: url("../../assets/icons/minus-primary.svg"); }
+              content: url("../assets/icons/minus-primary.svg"); }
           .corporation-clients__faq__link span {
             padding-right: 17px;
             letter-spacing: 0.2px; }
@@ -2639,7 +2639,7 @@ body {
           color: #000;
           margin-bottom: 0; }
           .corporation-clients__faq__link:after {
-            content: url("../../assets/icons/plus-primary.svg");
+            content: url("../assets/icons/plus-primary.svg");
             margin-left: auto; }
           .corporation-clients__faq__link[aria-expanded="true"] {
             pointer-events: auto;
@@ -2648,7 +2648,7 @@ body {
               border-bottom: 1px solid #DFDFDF;
               padding-bottom: 17px; }
             .corporation-clients__faq__link[aria-expanded="true"]:after {
-              content: url("../../assets/icons/minus-primary.svg"); }
+              content: url("../assets/icons/minus-primary.svg"); }
           .corporation-clients__faq__link span {
             padding-right: 17px;
             padding-left: 3px;
