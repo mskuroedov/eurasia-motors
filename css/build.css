@@ -2043,7 +2043,7 @@ body {
       line-height: 22px;
       letter-spacing: -.4px; }
     .corporation-clients__application .application-bg {
-      background: url("../assets/corporation-clients/application-bg.png");
+      background: url("../../assets/corporation-clients/application-bg.png");
       background-size: cover;
       margin: 0 -50px -50px;
       max-width: calc(100% + 100px);
@@ -2098,7 +2098,7 @@ body {
       position: absolute;
       width: 338px;
       height: 148px;
-      background: url(../assets/landing-promo-decor-2.svg);
+      background: url(../../assets/landing-promo-decor-2.svg);
       background-repeat: repeat-x;
       background-position-x: 13px;
       top: -75px;
@@ -2109,7 +2109,7 @@ body {
       position: absolute;
       width: 338px;
       height: 148px;
-      background: url(../assets/landing-promo-decor-2.svg);
+      background: url(../../assets/landing-promo-decor-2.svg);
       background-repeat: repeat-x;
       background-position-x: 13px;
       bottom: -88px;
@@ -2209,7 +2209,7 @@ body {
         position: absolute;
         width: 338px;
         height: 148px;
-        background: url(../assets/landing-promo-decor-2.svg);
+        background: url(../../assets/landing-promo-decor-2.svg);
         background-repeat: repeat-x;
         background-position-x: 13px;
         top: 7px;
@@ -2440,7 +2440,7 @@ body {
       position: absolute;
       width: 338px;
       height: 148px;
-      background: url(../assets/landing-promo-decor-2.svg);
+      background: url(../../assets/landing-promo-decor-2.svg);
       background-repeat: repeat-x;
       background-position-x: 13px;
       bottom: 18px;
@@ -2451,7 +2451,7 @@ body {
       position: absolute;
       width: 338px;
       height: 148px;
-      background: url(../assets/landing-promo-decor-2.svg);
+      background: url(../../assets/landing-promo-decor-2.svg);
       background-repeat: repeat-x;
       background-position-x: 13px;
       top: 79px;
