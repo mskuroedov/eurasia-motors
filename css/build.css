@@ -1719,7 +1719,7 @@ body {
     width: 100%;
     height: 100%;
     background: #F4F8FA;
-    z-index: 1;
+    z-index: 0;
     transition: all .2s; }
   .tile-w-hover .album {
     width: 101%;
@@ -1727,16 +1727,37 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 0; }
+    z-index: 1;
+    object-fit: cover;
+    -webkit-clip-path: circle(0 at 50px 50px);
+    clip-path: circle(0 at 50px 50px);
+    -webkit-transition: -webkit-clip-path 0.5s;
+    transition: -webkit-clip-path 0.5s;
+    transition: clip-path 0.5s;
+    transition: clip-path 0.5s,-webkit-clip-path 0.5s; }
   .tile-w-hover .icon {
     width: 40px;
     height: 40px;
     border: 2px solid #DD2A1B;
-    background: #F4F8FA;
     box-sizing: border-box;
     border-radius: 4px;
-    transition: all .2s; }
+    transition: all .2s;
+    transition-delay: .3s;
+    position: relative;
+    overflow: hidden; }
+    .tile-w-hover .icon:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: #F4F8FA;
+      transform: scale(0);
+      transition: all .3s;
+      transition-delay: .1s;
+      z-index: 0; }
     .tile-w-hover .icon img {
+      position: relative;
+      z-index: 1;
       margin-left: -2px;
       margin-top: -2px; }
   .tile-w-hover .description {
@@ -1754,16 +1775,24 @@ body {
       line-height: 22px;
       letter-spacing: -.3px;
       color: #000;
-      transition: all .2s; }
+      transition: all .2s;
+      transition-delay: .2s; }
   .tile-w-hover .icon, .tile-w-hover .description {
     position: relative;
     z-index: 1; }
   .tile-w-hover:hover, .tile-w-hover.height-2x {
     text-decoration: none; }
-    .tile-w-hover:hover .bg, .tile-w-hover.height-2x .bg {
-      background: transparent; }
     .tile-w-hover:hover .icon, .tile-w-hover.height-2x .icon {
       border-color: #F4F8FA; }
+      .tile-w-hover:hover .icon:before, .tile-w-hover.height-2x .icon:before {
+        transform: scale(1); }
+    .tile-w-hover:hover .album, .tile-w-hover.height-2x .album {
+      -webkit-transition: -webkit-clip-path 1s 0.1s;
+      transition: -webkit-clip-path 1s 0.1s;
+      transition: clip-path 1s 0.1s;
+      transition: clip-path 1s 0.1s,-webkit-clip-path 1s 0.1s;
+      -webkit-clip-path: circle(150% at 0 0);
+      clip-path: circle(150% at 0 0); }
     .tile-w-hover:hover .text, .tile-w-hover.height-2x .text {
       color: white; }
   @media (max-width: 767px) {
