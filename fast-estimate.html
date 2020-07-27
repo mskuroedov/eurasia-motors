@@ -1,0 +1,733 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Евразия эксперт</title>
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/build.css">
+</head>
+<body>
+<header class="header">
+    <div class="mobile">
+        <div class="container mobile">
+            <button class="menu-btn">
+                <img src="assets/icons/icon-menu.svg" alt="menu-icon">
+            </button>
+            <a href="#" class="header__logo">
+                <img src="assets/logo-white-black.svg" alt="">
+            </a>
+            <a class="header__phone" href="tel:+7 (3812) 99-18-31">8 800 556-76-89</a>
+            <div class="header__phone__description">Единый контактный центр</div>
+
+            <div class="tablet-btns">
+                <a href="#"><img src="assets/icons/callback.svg" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <div class="desktop">
+        <div class="first-row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-auto desktop__logo-block">
+                        <a href="#" class="desktop__logo">
+                            <svg width="150" height="73" viewBox="0 0 150 73" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M107.744 35.129L104.762 44.9887C104.762 45.1544 104.596 45.2372 104.43 45.2372H101.779C101.613 45.2372 101.448 45.0715 101.53 44.823L104.265 36.0404L104.182 36.1233C102.815 37.4489 101.427 38.7953 100.039 40.1417C98.6512 41.4881 97.2634 42.8345 95.8963 44.1601C95.3163 44.7401 94.6535 45.3201 93.1621 45.3201C92.0022 45.3201 91.505 44.9058 91.3393 44.3258C91.1953 43.8938 91.3016 43.3992 91.3863 43.0051C91.3921 42.9784 91.3977 42.9521 91.4032 42.9264C91.4098 42.8949 91.4162 42.8643 91.4222 42.8345L94.4049 32.892C94.4049 32.7263 94.5706 32.6434 94.7364 32.6434H97.3877C97.6362 32.6434 97.8019 32.8091 97.7191 33.0577L94.9849 41.8402C96.9306 39.8317 99.019 37.8232 101.07 35.8508L101.07 35.8506L101.072 35.8485C101.728 35.2179 102.38 34.5911 103.022 33.9691C103.602 33.3891 104.016 33.0577 104.513 32.892C105.01 32.6434 105.425 32.5605 106.005 32.5605C107.247 32.5605 107.744 33.0577 107.91 33.6377C107.987 34.1752 107.85 34.7127 107.764 35.0524L107.744 35.129ZM38.1477 32.809C38.4792 32.7261 38.7277 32.7261 39.0591 32.7261H45.8532C46.6817 32.7261 47.7588 32.809 48.3388 33.5547C49.0016 34.3004 48.7531 35.4603 48.5045 36.2889C48.1731 37.4488 47.5103 38.4431 46.3503 38.8573C46.516 38.9402 46.6817 39.023 46.7646 39.1059C47.2617 39.4373 47.4274 39.9344 47.3445 40.5973C47.3445 40.9037 47.2539 41.21 47.1732 41.4829L47.1732 41.4829C47.1448 41.579 47.1176 41.6709 47.096 41.7572C46.7646 42.8343 46.4332 43.6629 45.4389 44.4086C44.4447 45.1543 43.6161 45.2371 42.4562 45.2371H35.5793C34.2536 45.2371 33.3422 44.74 33.7565 43.2486L36.325 34.6318C36.6564 33.7204 37.3192 33.0576 38.1477 32.809ZM39.142 35.4603L38.4792 37.7802H43.3676C43.6161 37.7802 43.8647 37.7802 44.1132 37.6974C44.5275 37.6145 44.8589 37.4488 45.0246 37.1174C45.0396 37.0875 45.0572 37.0549 45.0766 37.0191C45.1646 36.8566 45.2881 36.6284 45.3561 36.2889C45.4389 36.1231 45.4389 35.9574 45.4389 35.7089C45.4389 34.9632 44.7761 34.9632 44.1961 34.9632H39.8048C39.4734 34.9632 39.3077 34.9632 39.2248 35.2946C39.2248 35.3775 39.2248 35.4603 39.142 35.4603ZM42.9533 40.0173H37.8163L37.1535 42.3372C37.0706 42.5029 37.0706 42.6686 37.0706 42.7515C37.0706 43 37.4849 43 37.7335 43H41.959C42.1247 43 42.4562 43 42.7047 42.9172C43.4504 42.7515 43.7818 42.3372 44.1132 41.6744C44.1961 41.4258 44.2789 41.1773 44.2789 40.9287C44.2789 40.1001 43.6161 40.0173 42.9533 40.0173ZM31.1045 45.237H25.2219C24.6419 45.237 23.979 45.1542 23.3162 45.0713C21.6591 44.6571 20.582 43.7457 20.582 41.9229C20.582 41.0943 20.8306 40.0172 21.162 38.8573C21.4106 38.0287 21.742 37.1173 22.1563 36.2888C23.2334 34.466 24.8076 33.3889 26.8789 32.9746C27.7075 32.8089 28.4531 32.8089 28.9503 32.8089H28.9503H34.7501C34.9158 32.8089 35.0815 32.9746 34.9986 33.1403L34.5015 34.8803C34.5015 34.9631 34.3358 35.046 34.253 35.046H29.2817C28.7017 35.046 28.1218 35.1288 27.7075 35.2117C26.3818 35.5431 25.4704 36.3717 24.8904 37.6973H33.0101C33.1759 37.6973 33.2587 37.7802 33.2587 37.9459V38.0287L32.7616 39.7687C32.7616 39.8515 32.5959 39.9344 32.513 39.9344H23.8962C23.7305 40.5144 23.6476 40.9286 23.7305 41.3429C23.8133 42.0886 24.559 42.5029 25.2219 42.6686C25.6361 42.7514 26.1333 42.8343 26.7132 42.8343H31.6016C31.7673 42.8343 31.933 43 31.8502 43.1657L31.3531 44.9056C31.3531 45.237 31.1874 45.237 31.1045 45.237ZM50.9068 45.2371C51.0725 45.2371 51.2382 45.1542 51.2382 44.9885L52.481 41.0115H58.7779C59.275 41.0115 59.6893 40.9287 60.1036 40.8458C61.3464 40.5144 62.1749 39.8516 62.8378 38.6916C63.1692 38.1117 63.4177 37.4488 63.5835 36.9517C63.7492 36.4546 63.9149 35.7917 63.9149 35.2118C63.9977 33.8861 63.3349 33.0576 62.0092 32.809C61.5121 32.7261 61.015 32.7261 60.6007 32.7261H53.9724C53.7238 32.7261 53.3924 32.7261 53.061 32.809C51.9839 33.0576 51.4039 33.6375 51.0725 34.7146L48.0069 44.8228C47.924 45.0714 48.0897 45.2371 48.2555 45.2371H50.9068ZM57.7837 38.6088H53.1438L54.1381 35.626C54.1628 35.5766 54.1802 35.5271 54.1967 35.4799C54.2357 35.3688 54.2704 35.2699 54.3867 35.2118C54.4695 35.1289 54.6352 35.1289 54.8009 35.1289H59.1093C59.3579 35.1289 59.6065 35.1289 59.855 35.2118C60.714 35.3679 60.5426 36.0394 60.3813 36.671C60.3715 36.7095 60.3617 36.7479 60.3521 36.786C60.3231 36.8441 60.294 36.9226 60.2614 37.0108C60.201 37.174 60.1283 37.3703 60.0207 37.5317C59.7722 38.1117 59.3579 38.4431 58.6951 38.5259C58.3636 38.6088 58.0322 38.6088 57.7837 38.6088ZM63.2522 45.237H60.4351C60.3523 45.237 60.2694 45.237 60.2694 45.1542C60.1037 45.0713 60.1037 44.8228 60.1866 44.7399L68.7206 34.2174C69.5491 33.1403 70.2948 32.8089 71.6204 32.8089C72.8633 32.8089 73.5261 33.1403 73.7746 34.3832L75.846 44.9056C75.9289 45.0713 75.7631 45.237 75.5146 45.237H72.7804C72.6147 45.237 72.449 45.1542 72.449 44.9885L71.9519 42.2543H65.5721L63.335 45.0713C63.4179 45.1542 63.335 45.237 63.2522 45.237ZM67.312 40.1001H71.7033L70.9576 35.626C70.9576 35.5431 70.9576 35.4603 70.8748 35.5431L67.312 40.1001ZM77.2546 45.2371H84.4629C84.96 45.2371 85.54 45.2371 86.2029 45.1542C87.5285 44.9885 88.6885 44.4914 89.4342 43.3315C89.6873 42.9517 89.8438 42.5236 89.9775 42.1579L89.9776 42.1576C90.0188 42.0447 90.0579 41.9378 90.097 41.8401C90.2627 41.343 90.3456 40.9287 90.3456 40.5973C90.3456 40.183 90.3456 39.9344 90.2627 39.6859C90.1799 39.3545 89.9313 39.1059 89.5999 38.9402C89.5584 38.9402 89.5377 38.9195 89.517 38.8988C89.4963 38.8781 89.4756 38.8573 89.4342 38.8573C90.097 38.6088 90.677 38.1117 91.0084 37.5317C91.257 37.2003 91.4227 36.786 91.5055 36.3717C91.535 36.1946 91.5751 36.028 91.6144 35.8644L91.6144 35.8644C91.6854 35.5688 91.7541 35.2832 91.7541 34.9632C91.7541 32.9747 89.8484 32.7261 88.3571 32.7261H80.9831C80.8173 32.7261 80.6516 32.809 80.6516 32.9747L80.1545 34.7146C80.0717 34.8803 80.1545 35.0461 80.3202 35.1289H80.4859H87.1143C88.0257 35.1289 88.3571 35.2118 88.0257 36.2889V36.3717C87.6942 37.6974 86.8657 37.6974 85.7057 37.6974H79.6574C79.4917 37.6974 79.326 37.7802 79.326 37.9459L78.8288 39.6859C78.746 39.8516 78.8288 40.0173 78.9946 40.1001H79.1603H85.54C85.583 40.1001 85.6291 40.0995 85.6775 40.0989C86.188 40.092 86.9485 40.0818 86.9485 40.763C86.9485 40.9287 86.9485 41.1773 86.8657 41.343C86.5343 42.2544 86.2029 42.6686 85.2915 42.7515C84.8772 42.8343 84.4629 42.8343 84.2972 42.8343H77.8346C77.6689 42.8343 77.5032 42.9172 77.5032 43.0829L77.0061 44.8228C76.9232 45.0714 77.0889 45.2371 77.2546 45.2371ZM120.173 44.989L123.156 35.0465C123.57 33.5551 122.741 32.7266 121.416 32.8094H114.539C111.639 32.8094 110.313 34.1351 109.485 36.8693C109.319 37.2835 109.236 37.7807 109.153 38.2778C108.905 40.0177 109.899 41.0948 111.639 41.0948H112.467L106.75 44.6576C106.502 44.8233 106.585 45.2375 106.916 45.2375H110.313C110.396 45.2375 110.396 45.2375 110.479 45.1547L116.279 41.2605C116.61 41.012 116.859 40.7634 117.024 40.5977C117.439 40.0177 117.77 39.1063 116.941 38.7749C116.693 38.6921 116.361 38.6921 116.196 38.6921H113.462C112.799 38.6921 112.467 38.4435 112.55 37.8635C112.633 37.615 112.716 37.3664 112.799 36.9521C113.13 35.7093 113.627 35.1293 114.953 35.1293H119.344C119.676 35.1293 119.841 35.1293 119.758 35.5436L116.941 44.8233C116.859 45.0718 117.024 45.2375 117.19 45.2375H119.841C120.007 45.2375 120.173 45.1547 120.173 44.989Z"
+                                      fill="black"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M14.6994 28.0051C14.6165 27.0937 15.1965 25.8509 15.6936 25.2709C27.7318 24.6221 30.9271 23.0326 38.9751 19.0291C40.1774 18.4311 41.488 17.7791 42.9526 17.0683C48.8353 14.2513 56.4578 12.0142 69.963 12.4285C83.3508 12.9066 88.001 15.3775 93.3495 18.2194L93.3535 18.2215C93.5646 18.3337 93.7768 18.4465 93.9907 18.5597C95.2962 19.2445 96.2922 19.8796 97.2213 20.4721C99.8891 22.1734 102.006 23.5233 109.319 24.6909C117.438 25.9337 130.695 28.2536 135.252 33.6391C114.124 23.9452 85.0425 23.8624 62.2576 26.5137C61.0148 26.4308 61.1805 24.1109 61.8433 23.7795C72.283 23.0338 86.2853 22.951 95.4821 23.4481C97.3877 23.5309 97.1392 22.8681 96.3106 22.1224C94.9021 20.7968 92.1679 19.4711 90.428 18.6425C82.7226 14.9141 76.1771 14.0856 66.566 14.3341C55.8778 14.6656 53.5579 15.2455 45.8525 19.3054C43.9337 20.2951 42.2561 21.3636 40.5905 22.4245C35.4239 25.7153 30.3728 28.9325 18.5935 29.4964C18.5935 29.4964 14.6994 29.9107 14.6994 28.0051ZM88.4398 55.9256L87.2798 59.9026C87.2798 60.0683 87.1141 60.1511 86.9484 60.1511H84.2971H84.2142C84.0485 60.0683 83.9657 59.9026 84.0485 59.7369L87.1141 49.6287L87.3627 48.883C87.5284 48.6344 87.6941 48.3859 88.1084 48.1373C88.4398 47.8887 88.7712 47.8059 89.1026 47.723C89.4341 47.6402 89.7655 47.6402 90.014 47.6402H96.6424C97.0566 47.6402 97.5538 47.6402 98.0509 47.723C98.548 47.8059 99.0451 48.0544 99.4594 48.3859C99.8737 48.883 100.039 49.463 99.9565 50.0429C99.9565 50.6229 99.7908 51.2029 99.6251 51.7828L99.6251 51.7829C99.4594 52.28 99.2108 52.9428 98.8794 53.5228C98.548 54.1857 97.968 54.7656 97.3052 55.1799C96.9738 55.3456 96.5595 55.5113 96.1452 55.5942C95.731 55.677 95.3167 55.7599 94.8196 55.7599H88.4398V55.9256ZM90.014 50.5401L89.1026 53.5228H93.7425C93.991 53.5228 94.3224 53.5228 94.571 53.44C94.6188 53.424 94.6696 53.4081 94.7223 53.3916L94.7227 53.3915C94.9442 53.3221 95.1989 53.2423 95.3996 53.1085C95.6481 52.9428 95.8138 52.6943 95.8967 52.4457C96.0042 52.2844 96.0769 52.0881 96.1373 51.9249C96.17 51.8367 96.199 51.7582 96.2281 51.7C96.311 51.4515 96.3938 51.2029 96.3938 50.8715C96.3938 50.6229 96.3938 50.4572 96.3109 50.2915C96.2519 50.1735 96.1089 50.1395 95.9416 50.0998C95.874 50.0838 95.8025 50.0668 95.731 50.0429C95.4824 49.9601 95.2338 49.9601 94.9853 49.9601H90.7597H90.6769C90.5112 49.9601 90.3455 49.9601 90.2626 50.0429C90.1521 50.2087 90.1153 50.3007 90.0785 50.3928C90.0601 50.4388 90.0416 50.4848 90.014 50.5401ZM110.561 59.9026L111.141 58.1627C111.224 57.9969 111.141 57.8312 110.976 57.7484H110.893H106.004C105.259 57.7484 104.513 57.7484 104.016 57.5827C103.187 57.3341 102.856 56.837 102.856 56.0084C102.876 55.9086 102.896 55.7943 102.918 55.6667L102.918 55.6666C102.988 55.2649 103.082 54.7316 103.27 54.1028C103.519 53.2743 103.767 52.6114 104.099 52.1143C104.679 51.12 105.507 50.4572 106.667 50.2087C107.247 50.0429 107.993 50.0429 108.739 50.0429H113.296C113.461 50.0429 113.627 49.9601 113.627 49.7944L114.207 48.0544C114.29 47.8059 114.124 47.6402 113.876 47.6402H108.076C107.579 47.6402 106.75 47.723 105.839 47.8887C103.684 48.3859 102.11 49.5458 101.033 51.4515C100.536 52.28 100.205 53.1914 99.956 54.0199C99.7075 54.6828 99.5418 55.4285 99.4589 56.257C99.2932 58.1626 100.205 59.4055 102.027 59.9026C102.773 60.1511 103.602 60.1511 104.264 60.1511H110.23C110.396 60.1511 110.561 60.0683 110.561 59.9026ZM64.9917 50.0429L62.009 59.9026C62.009 60.0683 61.8433 60.1511 61.6776 60.1511H59.0262H58.9434C58.7777 60.0683 58.6948 59.9026 58.7777 59.7369L61.6776 50.0429H56.6235H56.5406C56.3749 49.9601 56.2921 49.7944 56.3749 49.6287L56.872 47.8887C56.872 47.723 57.0377 47.6402 57.2035 47.6402H70.7087H70.7915C70.9572 47.723 71.0401 47.8887 70.9572 48.0544L70.4601 49.7944C70.4601 49.9601 70.2944 50.0429 70.1287 50.0429H64.9917ZM44.1122 57.5827C44.6492 57.7361 45.3283 57.7475 46.0178 57.7483H46.3492C47.0949 57.7483 47.8406 57.7483 48.4206 57.5826C49.5806 57.334 50.4091 56.6712 50.9891 55.677C51.3205 55.1798 51.569 54.517 51.8176 53.6885C52.0063 53.0596 52.0995 52.5263 52.1696 52.1246L52.1697 52.1245C52.1919 51.997 52.2119 51.8827 52.2319 51.7828C52.2319 50.9543 51.9005 50.4572 51.0719 50.2086C50.5766 50.0435 49.8344 50.0429 49.0914 50.0429L49.0834 50.0429H48.4206C47.6749 50.0429 47.4263 50.0429 46.7635 50.2087C45.6035 50.4572 44.775 51.12 44.195 52.1143C43.8636 52.6114 43.615 53.2743 43.3665 54.1028C43.1778 54.7316 43.0846 55.265 43.0144 55.6667L43.0144 55.6667L43.0144 55.6668L43.0144 55.6671C42.9921 55.7945 42.9722 55.9087 42.9522 56.0084C42.9522 56.837 43.2836 57.3341 44.1122 57.5827ZM49.6634 47.6402C49.7686 47.6402 49.859 47.6699 49.9219 47.723H50.7405C51.4033 47.723 52.2319 47.723 52.9776 47.9715C54.8004 48.4687 55.7118 49.7115 55.546 51.6171C55.4632 52.4456 55.2975 53.1913 55.0489 53.8542C54.8004 54.6827 54.4689 55.5941 53.9718 56.4226C52.8947 58.3283 51.2376 59.4054 49.1663 59.9025C48.2549 60.0682 47.4263 60.1511 46.9292 60.1511H46.1088L46.1007 60.1511H44.4436C43.7807 60.1511 42.9522 60.1511 42.2065 59.9026C40.4666 59.4055 39.5552 58.1626 39.638 56.257C39.7209 55.4285 39.8866 54.6828 40.1352 54.0199C40.3837 53.1914 40.7151 52.28 41.2123 51.4515C42.2894 49.5458 43.8636 48.3859 46.0178 47.8887C46.9292 47.723 47.7577 47.6402 48.2549 47.6402H49.6634ZM20.9964 59.9026L23.9791 50.043C24.4762 48.4687 25.5533 47.5573 26.9619 47.6402C28.1218 47.6402 28.6189 48.0545 29.0332 49.0487C29.3231 49.7528 29.6337 50.4776 29.9444 51.2024L29.9446 51.203C30.2553 51.9279 30.566 52.6529 30.856 53.3571C31.6123 52.6008 32.3686 51.8658 33.1141 51.1414L33.1143 51.1411C33.8388 50.4371 34.5531 49.7429 35.2473 49.0487C36.1587 48.2202 36.9043 47.6402 38.1472 47.6402C39.8871 47.6402 40.3014 48.5516 39.8871 50.1258L36.9872 59.9855C36.9872 60.1512 36.9043 60.234 36.7386 60.234H34.253C34.0873 60.234 33.9216 59.9855 34.0044 59.8198L36.4901 51.5343L31.6845 56.257C30.6903 57.3341 29.1989 57.0856 28.7846 56.0085L26.7961 51.0372L24.2277 59.7369C24.1448 59.9855 23.8962 60.1512 23.7305 60.1512H21.1621C20.9964 60.1512 20.9135 60.0683 20.9964 59.9026ZM76.3384 57.8283C76.2948 57.797 76.2414 57.7699 76.1768 57.7484H76.0939H75.5968C74.8511 57.7484 74.1054 57.7484 73.6083 57.5827C72.7798 57.3341 72.4483 56.837 72.4483 56.0084C72.4683 55.9086 72.4883 55.7943 72.5106 55.6667L72.5106 55.6666C72.5808 55.2649 72.674 54.7316 72.8626 54.1028C73.1112 53.2743 73.3597 52.6114 73.6912 52.1143C74.2711 51.12 75.0997 50.4572 76.2596 50.2087C76.6167 50.1194 76.8536 50.0782 77.1127 50.0592C77.1524 50.0849 77.1994 50.1073 77.2546 50.1257H77.3375H78.4974C79.2431 50.1257 79.9888 50.1257 80.4859 50.2914C81.3145 50.54 81.6459 51.0371 81.6459 51.8657C81.6259 51.9655 81.6059 52.0798 81.5836 52.2074C81.5135 52.6091 81.4202 53.1425 81.2316 53.7713C80.983 54.5999 80.7345 55.2627 80.4031 55.7598C79.8231 56.7541 78.9945 57.4169 77.8346 57.6655C77.4045 57.7883 76.8832 57.8201 76.3384 57.8283ZM79.4181 47.723C79.3551 47.6699 79.2647 47.6402 79.1595 47.6402H77.751C77.2539 47.6402 76.4253 47.723 75.514 47.8887C73.3597 48.3859 71.7855 49.5458 70.7084 51.4515C70.2113 52.28 69.8799 53.1914 69.6313 54.0199C69.3827 54.6828 69.217 55.4285 69.1342 56.257C68.9685 58.1626 69.8799 59.4055 71.7027 59.9026C72.384 60.1297 73.1345 60.1493 73.7646 60.151C73.8275 60.2042 73.918 60.2339 74.0233 60.2339H76.3432C76.8403 60.2339 77.6689 60.1511 78.5803 59.9854C80.7345 59.4883 82.3087 58.3283 83.3858 56.4226C83.8829 55.5941 84.2144 54.6827 84.4629 53.8542C84.7115 53.1913 84.8772 52.4456 84.96 51.6171C85.1257 49.7115 84.2144 48.4687 82.3916 47.9715C81.6459 47.723 80.8173 47.723 80.1545 47.723H79.4181Z"
+                                      fill="#DD2A1B"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="ml-auto col-auto">
+                        <a href="#" class="link">О холдинге</a>
+                        <a href="#" class="link">Кузовной ремонт</a>
+                        <a href="#" class="link">Кредит</a>
+                        <a href="#" class="link">Страхование</a>
+                        <a href="#" class="link">Корпоративным клиентам</a>
+                        <a href="#" class="link">Дилерские центры</a>
+                        <a href="#" class="link">Контакты</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="second-row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-auto">
+                        <a href="#" class="popup-link">Новые авто</a>
+                        <a href="#" class="popup-link">Авто с пробегом</a>
+                        <div class="popup-link" tabindex="-1" data-popover="services">Услуги
+                            <img src="assets/icons/chevron_down.svg" alt="">
+                        </div>
+                        <div class="popup-link" tabindex="-1" data-popover="sale">Спецпредложения
+                            <img src="assets/icons/chevron_down.svg" alt="">
+                        </div>
+                        <div class="popup-link" tabindex="-1" data-popover="news">Новости
+                            <img src="assets/icons/chevron_down.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-auto ml-auto">
+                        <div class="phone-block">
+                            <div>
+                                <a class="tel" href="tel:8 800 556-76-89">8 800 556-76-89</a>
+                                <a class="link" data-toggle="modal" data-target="#callback_modal">Заказать звонок</a>
+                            </div>
+                            <div class="phone-block__description">Единый контактный центр</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="mobile__menu">
+    <div class="mobile__menu__bg"></div>
+    <div class="inner-block">
+        <div class="head">
+            <button class="menu-btn">
+                <img src="assets/icons/cross.svg" alt="menu-icon">
+            </button>
+            <a href="#" class="header__logo">
+                <img src="assets/motors-logo.svg" alt="">
+            </a>
+        </div>
+        <div class="level main">
+            <a href="#" class="link-item" mm-data="#buy">Купить <img src="assets/icons/arrow-right.svg" alt=""></a>
+            <a href="#" class="link-item" mm-data="#sell">Продать <img src="assets/icons/arrow-right.svg" alt=""></a>
+            <a href="#" class="link-item" mm-data="#all">Все услуги <img src="assets/icons/arrow-right.svg"
+                                                                         alt=""></a>
+            <a href="#" class="link-item" mm-data="#company">Компания <img src="assets/icons/arrow-right.svg" alt=""></a>
+            <div class="contacts-block">
+                <button class="simple-btn --primary">Заказать звонок <img src="assets/icons/btn-arrow.svg" alt="">
+                </button>
+                <div class="footer__geo">
+                    <div class="icon">
+                        <img src="assets/icons/map.svg" alt="">
+                    </div>
+                    <div class="main">
+                        <div class="schedule">Работаем каждый день<br>с 08:30 до 20:00 без перерывов</div>
+                    </div>
+                </div>
+                <a href="tel:+7 (3812) 99-18-31" class="footer__phone">
+                    <span class="icon">
+                        <img src="assets/icons/phone.png" alt="">
+                    </span>
+                    +7 (3812) 99-18-31
+                </a>
+                <div class="socials-links --dark">
+                    <a href="#" class="item">
+                        <img src="assets/socials/ok.svg" alt="">
+                    </a>
+                    <a href="#" class="item">
+                        <img src="assets/socials/inst.svg" alt="">
+                    </a>
+                    <a href="#" class="item">
+                        <img src="assets/socials/vk.svg" alt="">
+                    </a>
+                    <a href="#" class="item">
+                        <img src="assets/socials/youtube.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="buy" class="level second d-none">
+            <div class="lighten">
+                <a href="#" class="link-item back"><img src="assets/icons/back-arrow.svg" alt="">Купить</a>
+            </div>
+            <a href="#" class="link-item">Покупка авто с пробегом</a>
+            <a href="#" class="link-item">Продажа авто с пробегом</a>
+            <a href="#" class="link-item">Подбор автомобиля с пробегом</a>
+            <a href="#" class="link-item">Оценка</a>
+            <a href="#" class="link-item">Выкуп</a>
+            <a href="#" class="link-item">Trade-in</a>
+            <a href="#" class="link-item">Оформление документов</a>
+
+        </div>
+        <div id="sell" class="level second d-none">
+            <div class="lighten">
+                <a href="#" class="link-item back"><img src="assets/icons/back-arrow.svg" alt="">Продать</a>
+            </div>
+            <a href="#" class="link-item">Покупка авто с пробегом</a>
+            <a href="#" class="link-item">Продажа авто с пробегом</a>
+            <a href="#" class="link-item">Подбор автомобиля с пробегом</a>
+            <a href="#" class="link-item">Оценка</a>
+            <a href="#" class="link-item">Выкуп</a>
+            <a href="#" class="link-item">Trade-in</a>
+            <a href="#" class="link-item">Оформление документов</a>
+
+        </div>
+        <div id="all" class="level second d-none">
+            <div class="lighten">
+                <a href="#" class="link-item back"><img src="assets/icons/back-arrow.svg" alt="">Все услуги</a>
+            </div>
+            <a href="#" class="link-item">Покупка авто с пробегом</a>
+            <a href="#" class="link-item">Продажа авто с пробегом</a>
+            <a href="#" class="link-item">Подбор автомобиля с пробегом</a>
+            <a href="#" class="link-item">Оценка</a>
+            <a href="#" class="link-item">Выкуп</a>
+            <a href="#" class="link-item">Trade-in</a>
+            <a href="#" class="link-item">Оформление документов</a>
+
+        </div>
+        <div id="company" class="level second d-none">
+            <div class="lighten">
+                <a href="#" class="link-item back"><img src="assets/icons/back-arrow.svg" alt="">Компания</a>
+            </div>
+            <a href="#" class="link-item">Покупка авто с пробегом</a>
+            <a href="#" class="link-item">Продажа авто с пробегом</a>
+            <a href="#" class="link-item">Подбор автомобиля с пробегом</a>
+            <a href="#" class="link-item">Оценка</a>
+            <a href="#" class="link-item">Выкуп</a>
+            <a href="#" class="link-item">Trade-in</a>
+            <a href="#" class="link-item">Оформление документов</a>
+
+        </div>
+    </div>
+</div>
+
+<div class="fast-estimate">
+    <div class="container">
+        <div class="row ">
+            <div class="col-12">
+                <div class="breadcrumbs">
+                    <a href="index.html" class="breadcrumbs__item">Главная</a>
+                    <a href="" class="breadcrumbs__item">Продать</a>
+                    <a href="" class="breadcrumbs__item">Быстрая оценка</a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-7">
+                <h1 class="heading-1 --after-line">Быстрая оценка</h1>
+                <div class="common-text">Укажите параметры вашего автомобиля, и мы посчитаем его среднюю цену. Стоимость
+                    расчитывается с помощью машинного обучения и анализа 10 000 000 проданных автомобилей на самых
+                    известных рыночных площадках.
+                </div>
+            </div>
+            <div class="col-12 col-md-8 col-xl-7">
+                <div class="advert__form-row">
+                    <div class="advert__form">
+                        <label for="mark">Марка</label>
+                        <div class="form-select ">
+                            <select name="model" id="mark" class="select" data-placeholder="Марка вашего авто">
+                                <option></option>
+                                <option value="1">Audi</option>
+                                <option value="2">BMW</option>
+                                <option value="3" selected>Subaru</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="advert__form">
+                        <label for="model">Модель</label>
+                        <div class="form-select ">
+                            <select name="model" id="model" class="select" data-placeholder="Модель вашего авто">
+                                <option></option>
+                                <option value="1">A1</option>
+                                <option value="2">A3</option>
+                                <option value="3">A7</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="advert__form half-w">
+                        <label for="year">Год выпуска</label>
+                        <div class="form-select ">
+                            <select name="model" id="year" class="select" data-placeholder="—">
+                                <option></option>
+                                <option value="1">2001</option>
+                                <option value="2">2002</option>
+                                <option value="3">2003</option>
+                                <option value="4" selected>2013</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="advert__form half-w">
+                        <label for="litres">Объем, л</label>
+                        <div class="form-select ">
+                            <select name="model" id="litres" class="select" data-placeholder="—">
+                                <option></option>
+                                <option value="1">1.2</option>
+                                <option value="2">1.4</option>
+                                <option value="3">1.6</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="advert__form">
+                        <label>Руль</label>
+                        <div class="form-radio-tags">
+                            <div class="tags">
+                                <div class="radio-tag">
+                                    <input type="radio" id="l-rudder" name="rudder">
+                                    <label for="l-rudder">Левый</label>
+                                </div>
+                                <div class="radio-tag">
+                                    <input type="radio" id="r-rudder" name="rudder">
+                                    <label for="r-rudder">Правый</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advert__form">
+                        <label>Поколение</label>
+                        <div class="form-radio-tags">
+                            <div class="tags">
+                                <div class="radio-tag">
+                                    <input type="radio" id="1-gen" name="gen">
+                                    <label for="1-gen">2009 — 2012</label>
+                                </div>
+                                <div class="radio-tag">
+                                    <input type="radio" id="2-gen" name="gen">
+                                    <label for="2-gen">2012 — 2015</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advert__form">
+                        <label>Привод</label>
+                        <div class="form-radio-tags">
+                            <div class="tags">
+                                <div class="radio-tag">
+                                    <input type="radio" id="1-drive" name="drive">
+                                    <label for="1-drive">Передний</label>
+                                </div>
+                                <div class="radio-tag">
+                                    <input type="radio" id="2-drive" name="drive">
+                                    <label for="2-drive">Задний</label>
+                                </div>
+                                <div class="radio-tag">
+                                    <input type="radio" id="3-drive" name="drive">
+                                    <label for="3-drive">Полный (4 WD)</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advert__form mb-3">
+                        <label>Двигатель</label>
+                        <div class="form-radio-tags">
+                            <div class="tags">
+                                <div class="radio-tag">
+                                    <input type="radio" id="1-engine" name="engine">
+                                    <label for="1-engine">Бензин</label>
+                                </div>
+                                <div class="radio-tag">
+                                    <input type="radio" id="2-engine" name="engine">
+                                    <label for="2-engine">Дизель</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="gas">
+                            <label for="gas">Установлено газовое оборудование</label>
+                        </div>
+                    </div>
+                    <div class="advert__form">
+                        <label>Коробка</label>
+                        <div class="form-radio-tags">
+                            <div class="tags">
+                                <div class="radio-tag">
+                                    <input type="radio" id="1-gearbox" name="gearbox">
+                                    <label for="1-gearbox">Автомат</label>
+                                </div>
+                                <div class="radio-tag">
+                                    <input type="radio" id="2-gearbox" name="gearbox">
+                                    <label for="2-gearbox">Механика</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advert__form">
+                        <label>Тип кузова</label>
+                        <div class="form-radio-tags">
+                            <div class="tags">
+                                <div class="radio-tag">
+                                    <input type="radio" id="1-carcass" name="carcass">
+                                    <label for="1-carcass">Хэтчбек</label>
+                                </div>
+                                <div class="radio-tag">
+                                    <input type="radio" id="2-carcass" name="carcass">
+                                    <label for="2-carcass">Седан</label>
+                                </div>
+                                <div class="radio-tag">
+                                    <input type="radio" id="3-carcass" name="carcass">
+                                    <label for="3-carcass">Универсал</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advert__form">
+                        <label>Пробег, км</label>
+                        <div class="form-input">
+                            <input type="text" placeholder="Например, 125">
+                        </div>
+                    </div>
+                    <div class="advert__form">
+                        <label>Какой вы владелец</label>
+                        <div class="form-radio-tags">
+                            <div class="tags">
+                                <div class="radio-tag">
+                                    <input type="radio" id="1-owner" name="owner">
+                                    <label for="1-owner">Первый</label>
+                                </div>
+                                <div class="radio-tag">
+                                    <input type="radio" id="2-owner" name="owner">
+                                    <label for="2-owner">Второй</label>
+                                </div>
+                                <div class="radio-tag">
+                                    <input type="radio" id="3-owner" name="owner">
+                                    <label for="3-owner">Третий или более</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advert__actions">
+                        <button class="simple-btn --primary ">Оценить авто<img
+                                src="./assets/icons/btn-arrow.svg" alt="">
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-12 col-md-4 ml-xl-auto d-none d-md-block">
+                <div class="fast-estimate__promo">
+                    <img src="./assets/fast-estimate/promo.png" alt="">
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="fast-estimate__result">
+                    <div class="title">Результат оценки</div>
+                    <div class="text">с учетом 5 672 подобных объявлений</div>
+                    <div class="fast-estimate__result__item">
+                        <div class="preview">
+                            <img src="./assets/fast-estimate/estimated-car.png" alt="">
+                        </div>
+                        <div class="info">
+                            <div class="name">
+                                <div class="info-title">Kia Rio, 2004</div>
+                                <div class="stats-row">
+                                    <div class="stat-item">134 000 км</div>
+                                    <div class="stat-item">2,0 л (216 л. с.)</div>
+                                    <div class="stat-item">Бензин</div>
+                                    <div class="stat-item">Автомат</div>
+                                    <div class="stat-item">Полный</div>
+                                </div>
+                            </div>
+                            <div class="price-market">
+                                <div class="info-title">Рыночная стоимость</div>
+                                <div class="calculated-price">387 000 ₽</div>
+                                <div class="stat-item">380 000 — 435 000 ₽</div>
+                            </div>
+                            <div class="price-trade-in">
+                                <div class="info-title">Стоимость в Trade-in</div>
+                                <div class="calculated-price">295 000 ₽</div>
+                                <div class="stat-item">210 000 — 360 000 ₽</div>
+                                <div class="link">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path opacity="1" fill-rule="evenodd" clip-rule="evenodd"
+                                              d="M9 11V16H11V11H16V9H11V4H9V9H4V11H9Z" fill="#4087BE"/>
+                                    </svg>
+
+                                    Выгода до 200 000 ₽ по спецпредложению
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-7">
+                <div class="fast-estimate__go-advert">
+                    <div class="title">Подать объявление на продажу</div>
+                    <div class="text">Специалисты «Евразия Эксперт» проведут полный осмотр авто в удоное для вас время.
+                        Затем вы можете оставить свое авто на <a href="#" class="link">Комиссионную продажу</a> или <a
+                                href="#" class="link">Срочный выкуп</a>.
+                    </div>
+                    <button class="simple-btn --primary ">Записаться на осмотр<img
+                            src="./assets/icons/btn-arrow.svg" alt="">
+                    </button>
+                    <div class="promo">
+                        <img src="./assets/fast-estimate/add-advert-car.png" class="car" alt="">
+                        <img src="./assets/fast-estimate/add-advert-hand.png" class="hand" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-5">
+                <div class="fast-estimate__go-trade-in">
+                    <div class="title">Обменять авто в Trade-in</div>
+                    <div class="text">Обменяйте свой автомобиль на новый авто из холдинга «Евразия Моторс»</div>
+                    <div class="partners-imgs">
+                        <div><img src="./assets/partners/nissan.png" alt=""></div>
+                        <div><img src="./assets/partners/mitsubishi.png" alt=""></div>
+                        <div><img src="./assets/partners/kia.png" alt=""></div>
+                        <div><img src="./assets/partners/hyundai.png" alt=""></div>
+                        <div><img src="./assets/partners/citroen.png" alt=""></div>
+                    </div>
+                    <button class="simple-btn --black ">Заявка на Traid-in<img
+                            src="./assets/icons/btn-arrow.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-xl-9 desktop-block">
+                <div class="desktop-block__item">
+                    <div class="footer__title">
+                        купить
+                    </div>
+                    <a href="#">Новые автомобили</a>
+                    <a href="#">Автомобили с пробегом</a>
+                    <a href="#">Каталог автомобилей</a>
+                </div>
+                <div class="desktop-block__item">
+                    <div class="footer__title">
+                        Все услуги
+                    </div>
+                    <a href="#">Trade-in</a>
+                    <a href="#">Кредитование</a>
+                    <a href="#">Страхование</a>
+                    <a href="#">Корпоративным клиентам</a>
+                    <a href="#">Сервисное обслуживание</a>
+                    <a href="#">Кузовной ремонт</a>
+                    <a href="#">Срочный выкуп авто</a>
+                </div>
+                <div class="desktop-block__item">
+                    <div class="footer__title">
+                        Компания
+                    </div>
+                    <a href="#">О компании</a>
+                    <a href="#">Новости</a>
+                    <a href="#">Акции и спецпредложения</a>
+                    <a href="#">Галерея</a>
+                    <a href="#">Партнёры</a>
+                    <a href="#">Вакансии</a>
+                    <a href="#">Отзывы</a>
+                </div>
+            </div>
+            <div class="col-12 col-xl-3  mobile-block">
+                <div class="footer__title">
+                    Контакты
+                </div>
+                <div class="footer__geo">
+                    <div class="icon">
+                        <img src="assets/icons/map.svg" alt="">
+                    </div>
+                    <div class="main">
+                        <div class="text">ул. 31-рабочая, 1 А, г. Омск</div>
+                        <div class="schedule">Работаем каждый день<br>с 08:30 до 20:00 без перерывов</div>
+                    </div>
+                </div>
+                <a href="tel:+7 (3812) 99-18-31" class="footer__phone">
+                    <span class="icon">
+                        <img src="assets/icons/phone.png" alt="">
+                    </span>
+                    +7 (3812) 99-18-31
+                </a>
+                <div class="footer__actions">
+                    <button class="simple-btn --primary" data-toggle="modal" data-target="#callback_modal">Заказать
+                        звонок <img src="assets/icons/btn-arrow.svg" alt="">
+                    </button>
+
+                    <a href="#" class="arrow-btn" data-toggle="modal" data-target="#request_modal">
+                    <span class="circle">
+                        <img src="assets/icons/btn-arrow.svg" alt="">
+                    </span>
+                        <span class="text">Запись<br>на осмотр авто</span>
+                    </a>
+                </div>
+                <div class="footer__socials">
+                    <div class="socials-links --dark">
+                        <a href="#" class="item">
+                            <img src="assets/socials/ok.svg" alt="">
+                        </a>
+                        <a href="#" class="item">
+                            <img src="assets/socials/inst.svg" alt="">
+                        </a>
+                        <a href="#" class="item">
+                            <img src="assets/socials/vk.svg" alt="">
+                        </a>
+                        <a href="#" class="item">
+                            <img src="assets/socials/youtube.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyrights-block">
+        <div class="container">
+            <div class="row copyrights-row">
+                <div class="col-auto col-xl-auto logos ">
+                    <img src="assets/motors-logo.svg" alt="">
+                </div>
+                <div class="col-8 col-md-5 col-xl-7 copyright">
+                    <p>© 2020, ООО «Евразия Моторс» | <a href="#">Политика конфиденциальности</a></p>
+                </div>
+                <div class="col-12 col-md-auto ml-md-auto created">
+                    <span>Создание и продвижение </span>
+                    <a href="https://digitalaround.ru/"><img src="assets/da-logo.svg"
+                                                             alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--modals-->
+<div class="modal fade eu-modal " tabindex="-1" role="dialog" id="request_modal">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content ">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="./assets/icons/modal-cross.svg" alt="">
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="request">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="modal-title">
+                                Записаться<br>на осмотр авто!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-input">
+                        <label for="callback_name">
+                            <span class="label-text">Имя</span>
+                            <span class="error-text">Нам нужно к вам как-то обратиться!</span>
+                        </label>
+                        <input type="text" id="req_name" required>
+                    </div>
+                    <div class="form-input phone">
+                        <label for="callback_phone">
+                            <span class="label-text">Номер телефона</span>
+                            <span class="error-text">Номер телефона обязателен</span>
+                        </label>
+                        <input type="text" id="req_phone" required data-inputmask="'mask':'999 999-99-99'">
+                    </div>
+                    <button class="simple-btn --primary" id="request_success">Записаться <img
+                            src="./assets/icons/btn-arrow.svg" alt="">
+                    </button>
+                    <p class="agreement">Отправляя данные формы, вы принимаете условия
+                        <a href="#">Пользовательского соглашения</a> «Евразия Эксперт»</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade eu-modal " tabindex="-1" role="dialog" id="callback_modal">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content ">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="./assets/icons/modal-cross.svg" alt="">
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="request">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="modal-title">
+                                Заказать<br>обратный звонок!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <label for="callback_name">
+                            <span class="label-text">Имя</span>
+                            <span class="error-text">Нам нужно к вам как-то обратиться!</span>
+                        </label>
+                        <input type="text" id="callback_name" required>
+                    </div>
+                    <div class="form-input phone">
+                        <label for="callback_phone">
+                            <span class="label-text">Номер телефона</span>
+                            <span class="error-text">Номер телефона обязателен</span>
+                        </label>
+                        <input type="text" id="callback_phone" required data-inputmask="'mask':'999 999-99-99'">
+                    </div>
+                    <button class="simple-btn --primary" id="callback_success">Заказать <img
+                            src="./assets/icons/btn-arrow.svg" alt="">
+                    </button>
+                    <p class="agreement">Отправляя данные формы, вы принимаете условия
+                        <a href="#">Пользовательского соглашения</a> «Евразия Эксперт»</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade eu-modal " tabindex="-1" role="dialog" id="request_success_modal">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content ">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="./assets/icons/modal-cross.svg" alt="">
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="modal-title">
+                            Благодарим!<br>Ваша заявка принята
+                        </div>
+                    </div>
+                </div>
+                <div class="success">
+                    <div class="common-text">Мы перезвоним вам в ближайшее время</div>
+                    <div>
+                        <a href="#" class="link w-icon">
+                            <span class="icon">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+<path d="M22.1806 13.2964C24.3437 12.9471 26 11.0837 26 8.84375C26 7.06223 24.5161 5.62109 22.7344 5.62109H22.0898V7.55469C22.0898 7.91002 21.8008 8.19922 21.4453 8.19922C21.09 8.19922 20.8008 7.91002 20.8008 7.55469C20.8008 5.0432 18.7769 3 16.2891 3L14.6202 3.00134L15.8577 4.1234C15.8602 4.12575 16.1137 4.35687 16.3737 4.72362C16.873 5.42773 16.8881 6.43314 16.4104 7.16898C15.6914 8.27643 15.6103 9.65579 16.1957 10.7773H9.49883L6.9207 14.6445H4V15.9336H5.33203V22.3789H6.62109V25H10.4883V22.3789H19.5117V25H23.3789V22.3789H24.668V15.9336H26V14.6445H23.0793L22.1806 13.2964ZM17.4917 7.87074C18.1149 6.91083 18.2163 5.70351 17.8032 4.67242C18.819 5.22263 19.5117 6.30826 19.5117 7.55469C19.5117 8.62085 20.3792 9.48828 21.4453 9.48828C22.5115 9.48828 23.3789 8.62085 23.3789 7.55469V7.0201C24.1453 7.28815 24.7109 8.01526 24.7109 8.84375C24.7109 10.6207 23.246 12.0664 21.4453 12.0664H20.4606C19.1562 12.0664 17.9635 11.351 17.3478 10.1996C16.9668 9.48677 17.0219 8.59433 17.4917 7.87074ZM10.1887 12.0664H17.1803C18.0575 12.8828 19.222 13.3555 20.4606 13.3555H20.6707L21.5301 14.6445H21.2932L18.7151 15.9336H11.285L8.70692 14.6445H8.46992L10.1887 12.0664ZM6.62109 21.0898V19.8008H8.55469C9.39493 19.8008 10.1113 20.3396 10.3775 21.0898H6.62109ZM9.19922 23.7109H7.91016V22.3789H9.19922V23.7109ZM22.0898 23.7109H20.8008V22.3789H22.0898V23.7109ZM19.6227 21.0898C19.8887 20.3396 20.6051 19.8008 21.4453 19.8008H23.3789V21.0898H19.6227ZM23.3789 18.5117H21.4453C19.889 18.5117 18.5869 19.6207 18.2874 21.0898H11.7126C11.4131 19.6207 10.111 18.5117 8.55469 18.5117H6.62109V15.9336H8.40262L10.9807 17.2227H19.0194L21.5975 15.9336H23.3789V18.5117Z"
+      fill="#4087BE"/>
+<path d="M13.0664 18.5117H16.9336V19.8008H13.0664V18.5117Z" fill="#4087BE"/>
+</svg>
+
+                            </span>
+                            Продать авто</a>
+                    </div>
+                    <div>
+                        <a href="#" class="link w-icon">
+                            <span class="icon">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+<path d="M20.4041 7.21802H15.3171L13.911 10.0302H12.9395V14.2482H14.3455V15.6542H15.7514V14.2482H19.9696V15.6542H21.3757V14.2482H22.7816V10.0302H21.81L20.4041 7.21802ZM16.1859 8.62408H19.5351L20.2381 10.0302H15.483L16.1859 8.62408ZM21.3757 12.8423H14.3455V11.4362H21.3757V12.8423Z"
+      fill="#4087BE"/>
+<path d="M17.8609 3C12.8214 3 8.72151 7.09991 8.72151 12.1392C8.72151 14.4064 9.55171 16.4832 10.9235 18.0822L10.0532 18.9525L9.05915 17.9583L3 24.0172L5.98261 27L12.0416 20.9409L11.0475 19.9468L11.9178 19.0763C13.5169 20.4483 15.5937 21.2783 17.8609 21.2783C22.9001 21.2783 27 17.1786 27 12.1392C27 7.09991 22.9001 3 17.8609 3ZM5.98261 25.0115L4.98835 24.0174L9.05915 19.9468L10.0532 20.9409L5.98261 25.0115ZM17.8609 19.8724C13.5967 19.8724 10.1276 16.4033 10.1276 12.1392C10.1276 7.87518 13.5967 4.40607 17.8609 4.40607C22.1249 4.40607 25.594 7.87518 25.594 12.1392C25.594 16.4033 22.1249 19.8724 17.8609 19.8724Z"
+      fill="#4087BE"/>
+</svg>
+
+                            </span>
+                            Купить авто</a>
+                    </div>
+                    <button class="simple-btn --primary ">Продолжить работу <img
+                            src="./assets/icons/btn-arrow.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery.inputmask.bundle.min.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/header.js"></script>
+<script src="js/modals.js"></script>
+<script src="js/inputs.js"></script>
+</body>
+</html>
