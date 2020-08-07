@@ -8108,7 +8108,9 @@ body {
         .dealership__ceo .ceo-info .name, .dealership__ceo .ceo-info .position {
           padding-left: 0; }
         .dealership__ceo .ceo-info .name {
-          letter-spacing: -1.7px; }
+          font-size: 16px;
+          letter-spacing: -0.5px;
+          margin-bottom: 4px; }
       .dealership__ceo .ceo-text .quote-icon {
         width: 30px;
         top: -55px; }
