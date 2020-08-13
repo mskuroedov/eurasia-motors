@@ -9458,10 +9458,10 @@ body {
   margin: 0 15px 30px;
   border: 1px solid #DFDFDF;
   border-radius: 3px;
-  overflow: hidden;
   background: white;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  position: relative; }
   .new-product-tile__item .image {
     position: relative;
     padding-top: 20px;
@@ -9479,6 +9479,7 @@ body {
       top: 0;
       width: 100%;
       height: 150px;
+      border-radius: 3px 3px 0 0;
       z-index: 1;
       background: #F4F8FA; }
   .new-product-tile__item .description {
@@ -9496,6 +9497,45 @@ body {
     .new-product-tile__item .name:hover {
       text-decoration: none;
       color: #DD2A1B; }
+  .new-product-tile__item .product-tag {
+    font-family: 'Lato', sans-serif;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 18px;
+    right: -9px;
+    z-index: 5;
+    border-radius: 3px;
+    border-bottom-right-radius: 0;
+    padding: 5px 7px 5px 4px;
+    border: 1px solid #5F5F5F;
+    background: #F4F8FA;
+    color: #5F5F5F;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase; }
+    .new-product-tile__item .product-tag svg {
+      margin: 0 5px; }
+    .new-product-tile__item .product-tag:after {
+      content: '';
+      position: absolute;
+      right: -1px;
+      bottom: -7px;
+      width: 0;
+      height: 0;
+      border-top: 0 solid transparent;
+      border-bottom: 6px solid transparent;
+      border-left: 8px solid #5F5F5F; }
+    .new-product-tile__item .product-tag.in-stock {
+      padding: 5px 10px 5px 10px;
+      background: #DD2A1B;
+      border-color: #DD2A1B;
+      color: white; }
+      .new-product-tile__item .product-tag.in-stock:after {
+        border-left-color: #891006; }
   .new-product-tile__item .options {
     font-size: 16px;
     line-height: 24px;
@@ -9610,6 +9650,16 @@ body {
         .new-product-tile__row.row-view .new-product-tile__item .name {
           width: 290px;
           margin-right: 77px; }
+        .new-product-tile__row.row-view .new-product-tile__item .product-tag {
+          position: relative;
+          display: inline-flex;
+          height: 27px;
+          margin-top: 1px;
+          margin-left: -9px;
+          line-height: 12px;
+          border-radius: 3px; }
+          .new-product-tile__row.row-view .new-product-tile__item .product-tag:after {
+            display: none; }
         .new-product-tile__row.row-view .new-product-tile__item .options {
           flex-direction: column;
           width: 160px; }
