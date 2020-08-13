@@ -181,7 +181,7 @@ a, button, input {
   border: 1px solid rgba(95, 95, 95, 0.2);
   border-radius: 4px;
   font-size: 15px;
-  line-height: 50px; }
+  line-height: 48px; }
   .select2-container--default .select2-selection--single .select2-selection__rendered[title] {
     border: 1px solid rgba(95, 95, 95, 0.6); }
 
@@ -570,6 +570,44 @@ a, button, input {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px; }
 
+.form-radios {
+  display: flex; }
+  .form-radios .radio input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0; }
+    .form-radios .radio input:checked + label:after {
+      opacity: 1; }
+  .form-radios .radio label {
+    position: relative;
+    padding-left: 30px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5F5F5F;
+    margin-right: 30px; }
+    .form-radios .radio label:before {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      background: #FFFFFF;
+      border: 1px solid rgba(95, 95, 95, 0.2);
+      box-sizing: border-box;
+      width: 18px;
+      height: 18px;
+      border-radius: 100%; }
+    .form-radios .radio label:after {
+      content: '';
+      opacity: 0;
+      position: absolute;
+      left: 6px;
+      top: 6px;
+      width: 10px;
+      height: 10px;
+      background: #DD2A1B;
+      border-radius: 100%; }
+
 .form-toggle {
   margin-bottom: 13px; }
   .form-toggle input {
@@ -605,6 +643,79 @@ a, button, input {
       left: 3px;
       border-radius: 100%;
       transition: all .2s; }
+
+.range-input {
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px; }
+  .range-input__block {
+    display: flex;
+    max-width: 100%;
+    height: 49px;
+    padding-left: 20px;
+    padding-right: 18px;
+    background: #F4F8FA;
+    border: 1px solid rgba(95, 95, 95, 0.1);
+    box-sizing: border-box;
+    border-radius: 4px;
+    overflow: hidden; }
+  .range-input label {
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 46px;
+    color: #5F5F5F;
+    white-space: nowrap; }
+  .range-input .noUi-horizontal {
+    margin-top: -3px;
+    padding-right: 15px; }
+  .range-input__input {
+    width: 120px;
+    height: 47px;
+    font-size: 17px;
+    line-height: 39px;
+    color: #000;
+    background: transparent;
+    border: 0;
+    text-align: right;
+    margin-left: auto; }
+  .range-input .ticks {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px; }
+    .range-input .ticks .tick {
+      color: #5F5F5F;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+      width: 30px; }
+      .range-input .ticks .tick:first-of-type {
+        text-align: left; }
+      .range-input .ticks .tick:last-of-type {
+        text-align: right; }
+    .range-input .ticks.sm .tick {
+      width: 20px; }
+
+.indicators {
+  width: 100%;
+  padding-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between; }
+  .indicators .item {
+    width: 41%;
+    margin-bottom: 30px; }
+    .indicators .item .val {
+      font-family: 'Magistral', sans-serif;
+      font-style: italic;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 24px;
+      margin-bottom: 10px; }
+    .indicators .item .name {
+      font-size: 14px;
+      line-height: 19px;
+      color: #5F5F5F; }
 
 .simple-btn {
   border-radius: 27px;
@@ -1670,7 +1781,7 @@ body {
     .noUi-horizontal .noUi-handle:hover {
       background: #DD2A1B; }
       .noUi-horizontal .noUi-handle:hover:after {
-        background: #FF5200; }
+        background: #C00E08; }
     .noUi-horizontal .noUi-handle:active, .noUi-horizontal .noUi-handle:focus {
       outline: none; }
     .noUi-horizontal .noUi-handle:after {
@@ -1785,6 +1896,7 @@ body {
     transition: clip-path 0.5s;
     transition: clip-path 0.5s, -webkit-clip-path 0.5s; }
   .tile-w-hover .icon {
+    min-width: 40px;
     width: 40px;
     height: 40px;
     border: 2px solid #DD2A1B;
@@ -9644,6 +9756,11 @@ body {
   .history__text-decoration {
     position: relative;
     margin-bottom: 60px; }
+    .history__text-decoration img {
+      position: absolute;
+      top: 50px;
+      left: -120px;
+      z-index: 5; }
     .history__text-decoration div {
       margin-top: 42px;
       width: 360px;
@@ -9771,6 +9888,8 @@ body {
       .history__text-decoration {
         height: 178px;
         margin-bottom: 71px; }
+        .history__text-decoration img {
+          width: 280px; }
         .history__text-decoration div {
           position: absolute;
           margin-top: 12px;
@@ -9795,6 +9914,11 @@ body {
         position: unset; }
       .history__text-decoration {
         position: unset; }
+        .history__text-decoration img {
+          position: relative;
+          z-index: 5;
+          left: 0;
+          top: 50px; }
         .history__text-decoration div {
           width: calc(50% - 126px);
           height: 265px;
@@ -9808,6 +9932,313 @@ body {
           bottom: auto;
           right: calc(50% - 387px);
           top: 298px; } }
+
+.crediting {
+  background: white;
+  padding-top: 24px;
+  padding-bottom: 60px;
+  overflow: hidden; }
+  .crediting__intro {
+    position: relative;
+    padding-bottom: 74px; }
+    .crediting__intro .heading-1 {
+      margin-bottom: 43px; }
+    .crediting__intro .common-text {
+      line-height: 22px; }
+    .crediting__intro .promo {
+      position: relative; }
+      .crediting__intro .promo:before {
+        content: '';
+        position: absolute;
+        right: 15px;
+        top: 43px;
+        width: 411px;
+        height: 370px;
+        border-top-left-radius: 25px;
+        background: #F4F8FA; }
+      .crediting__intro .promo img {
+        position: relative;
+        z-index: 1;
+        margin-top: 43px; }
+    @media (max-width: 767px) {
+      .crediting__intro {
+        padding-bottom: 37px; }
+        .crediting__intro .heading-1 {
+          margin-bottom: 34px; }
+        .crediting__intro .common-text {
+          line-height: 24px;
+          letter-spacing: -0.1px; } }
+    @media (min-width: 768px) and (max-width: 1199px) {
+      .crediting__intro {
+        padding-bottom: 33px; }
+        .crediting__intro .heading-1 {
+          margin-bottom: 29px; }
+        .crediting__intro .common-text {
+          letter-spacing: -.16px; }
+        .crediting__intro .promo {
+          position: unset; }
+          .crediting__intro .promo:before {
+            width: calc(50% - 126px);
+            height: 232.4px;
+            right: 0;
+            top: -2px; }
+          .crediting__intro .promo img {
+            position: absolute;
+            margin-top: -3px;
+            right: 1px; } }
+  .crediting__tiles .tile-w-hover__row {
+    position: relative;
+    z-index: 1; }
+  .crediting__tiles .container {
+    position: relative; }
+    .crediting__tiles .container:before {
+      content: '';
+      position: absolute;
+      width: 324px;
+      height: 138px;
+      background: url(../assets/landing-promo-decor-2.svg);
+      background-repeat: repeat-x;
+      background-position-x: 13px;
+      bottom: -52px;
+      left: -150px;
+      z-index: 0; }
+    .crediting__tiles .container:after {
+      content: '';
+      position: absolute;
+      width: 324px;
+      height: 138px;
+      background: url(../assets/landing-promo-decor-2.svg);
+      background-repeat: repeat-x;
+      background-position-x: 13px;
+      top: -55px;
+      right: -150px;
+      z-index: 0; }
+  @media (max-width: 767px) {
+    .crediting__tiles .container:before {
+      display: none; }
+    .crediting__tiles .container:after {
+      display: none; } }
+  @media (min-width: 768px) and (max-width: 1199px) {
+    .crediting__tiles .container:before {
+      bottom: -49px; }
+    .crediting__tiles .container:after {
+      top: -43px;
+      right: -183px; } }
+  .crediting__calc {
+    padding-top: 131px;
+    padding-bottom: 141px;
+    position: relative; }
+    .crediting__calc:after {
+      content: '';
+      position: absolute;
+      height: 666px;
+      width: calc(50% - 211px);
+      top: 131px;
+      right: 0;
+      border-top-left-radius: 25px;
+      background: #F4F8FA; }
+    .crediting__calc .calc-promo {
+      position: relative;
+      z-index: 2;
+      margin-top: 120px;
+      margin-left: 50px; }
+      .crediting__calc .calc-promo:before {
+        content: '';
+        position: absolute;
+        width: 324px;
+        height: 138px;
+        background: url(../assets/landing-promo-decor-2.svg);
+        background-repeat: repeat-x;
+        background-position-x: 13px;
+        top: 59px;
+        left: 84px;
+        z-index: 0; }
+      .crediting__calc .calc-promo img {
+        position: relative;
+        z-index: 4; }
+    .crediting__calc .title-h2 {
+      margin-bottom: 53px; }
+    .crediting__calc .subtitle {
+      font-size: 20px;
+      line-height: 26px;
+      margin-bottom: 40px; }
+    .crediting__calc .form-radios {
+      margin-bottom: 16px; }
+    .crediting__calc .calc-form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 50px 46px 69px;
+      grid-column-gap: 20px;
+      grid-row-gap: 25px; }
+      .crediting__calc .calc-form .range-input {
+        grid-column: 1/3; }
+      .crediting__calc .calc-form .form-input input {
+        background: #F4F8FA; }
+      .crediting__calc .calc-form .select2-selection {
+        background: #F4F8FA; }
+    .crediting__calc .calc-actions {
+      width: 100%;
+      padding-top: 10px;
+      display: grid;
+      grid-template-columns: 266px 250px;
+      grid-column-gap: 26px; }
+      .crediting__calc .calc-actions .simple-btn {
+        width: 266px;
+        margin-left: -4px; }
+      .crediting__calc .calc-actions .common-text {
+        font-size: 14px;
+        line-height: 20px;
+        font-style: italic; }
+    .crediting__calc .bank-offers-row {
+      padding-top: 50px; }
+      .crediting__calc .bank-offers-row .subtitle {
+        margin-bottom: 30px; }
+      .crediting__calc .bank-offers-row .link {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.58px;
+        margin-left: 3px; }
+        .crediting__calc .bank-offers-row .link .text {
+          border-bottom: 1px dashed #4087BE; }
+        .crediting__calc .bank-offers-row .link:hover .text {
+          border-color: #DD2A1B; }
+    .crediting__calc .bank-offer-item {
+      background: #F4F8FA;
+      display: grid;
+      grid-template-columns: 150px 1fr 226px;
+      grid-column-gap: 50px;
+      padding: 20px 59px 20px 27px;
+      align-items: center;
+      margin-bottom: 10px; }
+      .crediting__calc .bank-offer-item .image {
+        height: 70px;
+        background: white; }
+        .crediting__calc .bank-offer-item .image img {
+          max-width: 100%; }
+      .crediting__calc .bank-offer-item .description {
+        display: grid;
+        grid-template-columns: 118px 142px 163px;
+        grid-column-gap: 80px; }
+        .crediting__calc .bank-offer-item .description__item {
+          text-align: right; }
+          .crediting__calc .bank-offer-item .description__item .label {
+            font-size: 16px;
+            line-height: 22px;
+            margin-bottom: 5px;
+            color: #5F5F5F;
+            letter-spacing: -0.2px;
+            white-space: nowrap; }
+          .crediting__calc .bank-offer-item .description__item .value {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 26px;
+            margin-right: 3px;
+            letter-spacing: 0.2px; }
+      .crediting__calc .bank-offer-item .action {
+        padding-left: 19px; }
+        .crediting__calc .bank-offer-item .action .simple-btn {
+          height: 55px;
+          padding-left: 32px; }
+    @media (max-width: 767px) {
+      .crediting__calc {
+        padding-top: 58px;
+        padding-bottom: 60px; }
+        .crediting__calc .title-h2 {
+          margin-bottom: 34px; }
+        .crediting__calc .subtitle {
+          margin-bottom: 20px; }
+        .crediting__calc .form-radios {
+          flex-wrap: wrap;
+          margin-bottom: 20px; }
+          .crediting__calc .form-radios .radio {
+            width: 100%;
+            margin-bottom: 2px; } }
+    @media (min-width: 768px) and (max-width: 1199px) {
+      .crediting__calc {
+        padding-top: 79px;
+        padding-bottom: 81px; }
+        .crediting__calc:after {
+          display: none; }
+        .crediting__calc .title-h2 {
+          margin-bottom: 34px; }
+        .crediting__calc .subtitle {
+          margin-bottom: 20px; }
+        .crediting__calc .calc-form {
+          grid-column-gap: 20px; }
+          .crediting__calc .calc-form .range-input {
+            grid-column: auto; }
+        .crediting__calc .calc-actions {
+          grid-template-columns: 1fr 1fr;
+          grid-column-gap: 20px;
+          padding-top: 31px; }
+          .crediting__calc .calc-actions .simple-btn {
+            width: calc(100% + 5px); }
+            .crediting__calc .calc-actions .simple-btn img {
+              display: none; }
+          .crediting__calc .calc-actions .common-text {
+            letter-spacing: -0.3px; }
+        .crediting__calc .bank-offers-row {
+          padding-top: 24px; }
+        .crediting__calc .bank-offer-item {
+          grid-template-columns: 110px 483px;
+          grid-column-gap: 25px;
+          padding: 20px 29px 29px 7px;
+          justify-content: end; }
+          .crediting__calc .bank-offer-item .image {
+            height: auto; }
+          .crediting__calc .bank-offer-item .description {
+            grid-column-gap: 30px; }
+          .crediting__calc .bank-offer-item .action {
+            padding-left: 0;
+            grid-column: 2/3;
+            margin-left: auto; }
+            .crediting__calc .bank-offer-item .action .simple-btn {
+              margin-top: 21px;
+              margin-right: -5px; } }
+  .crediting__benefits-block {
+    border: 4px solid #DD2A1B;
+    padding: 48px 46px 69px;
+    border-radius: 25px 0 25px 0; }
+  .crediting__benefits .first {
+    display: grid;
+    grid-template-columns: 605px 343px;
+    grid-column-gap: 80px; }
+    .crediting__benefits .first .text .title-h2 {
+      margin-bottom: 33px; }
+    .crediting__benefits .first .text .common-text {
+      margin-bottom: 10px; }
+    .crediting__benefits .first .promo {
+      margin-top: -122px; }
+  .crediting__benefits .second {
+    margin-top: -22px; }
+    .crediting__benefits .second .subtitle {
+      font-size: 20px;
+      line-height: 26px;
+      font-weight: 600;
+      margin-bottom: 40px;
+      letter-spacing: -0.8px; }
+    .crediting__benefits .second .benefits {
+      display: grid;
+      grid-template-columns: 322px 321px 312px;
+      grid-column-gap: 52px;
+      margin-left: -12px; }
+      .crediting__benefits .second .benefits .illustration {
+        margin-bottom: 30px; }
+      .crediting__benefits .second .benefits div:not(:last-of-type) .common-text {
+        padding-left: 12px; }
+  @media (max-width: 767px) {
+    .crediting {
+      padding-top: 32px;
+      padding-bottom: 42px; }
+      .crediting .breadcrumbs {
+        display: none; } }
+  @media (min-width: 768px) and (max-width: 1199px) {
+    .crediting {
+      padding-top: 42px;
+      padding-bottom: 40px; }
+      .crediting .breadcrumbs {
+        display: none; } }
 
 .product {
   padding-top: 12px;
