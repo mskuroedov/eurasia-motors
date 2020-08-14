@@ -106,7 +106,7 @@ newsSlider.owlCarousel({
             slideBy: 1,
             autoWidth: true,
         },
-        800: {
+        768: {
             items: 3,
             slideBy: 3
         },

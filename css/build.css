@@ -9986,7 +9986,7 @@ body {
 .crediting {
   background: white;
   padding-top: 24px;
-  padding-bottom: 60px;
+  padding-bottom: 41px;
   overflow: hidden; }
   .crediting__intro {
     position: relative;
@@ -10246,37 +10246,472 @@ body {
             .crediting__calc .bank-offer-item .action .simple-btn {
               margin-top: 21px;
               margin-right: -5px; } }
-  .crediting__benefits-block {
-    border: 4px solid #DD2A1B;
-    padding: 48px 46px 69px;
-    border-radius: 25px 0 25px 0; }
-  .crediting__benefits .first {
-    display: grid;
-    grid-template-columns: 605px 343px;
-    grid-column-gap: 80px; }
-    .crediting__benefits .first .text .title-h2 {
-      margin-bottom: 33px; }
-    .crediting__benefits .first .text .common-text {
-      margin-bottom: 10px; }
-    .crediting__benefits .first .promo {
-      margin-top: -122px; }
-  .crediting__benefits .second {
-    margin-top: -22px; }
-    .crediting__benefits .second .subtitle {
-      font-size: 20px;
-      line-height: 26px;
-      font-weight: 600;
-      margin-bottom: 40px;
-      letter-spacing: -0.8px; }
-    .crediting__benefits .second .benefits {
+  .crediting__benefits {
+    position: relative;
+    position: relative; }
+    .crediting__benefits:before {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      top: 49%;
+      left: 0;
+      width: 100%;
+      height: 51%;
+      background: #F4F8FA; }
+    .crediting__benefits-block {
+      border: 4px solid #DD2A1B;
+      padding: 48px 46px 69px;
+      border-radius: 25px 0 25px 0;
+      position: relative;
+      z-index: 2; }
+    .crediting__benefits .first {
       display: grid;
-      grid-template-columns: 322px 321px 312px;
-      grid-column-gap: 52px;
-      margin-left: -12px; }
-      .crediting__benefits .second .benefits .illustration {
-        margin-bottom: 30px; }
-      .crediting__benefits .second .benefits div:not(:last-of-type) .common-text {
-        padding-left: 12px; }
+      grid-template-columns: 605px 343px;
+      grid-column-gap: 80px; }
+      .crediting__benefits .first .text .title-h2 {
+        margin-bottom: 33px; }
+      .crediting__benefits .first .text .common-text {
+        margin-bottom: 10px; }
+      .crediting__benefits .first .promo {
+        margin-top: -122px; }
+    .crediting__benefits .second {
+      margin-top: -22px; }
+      .crediting__benefits .second .subtitle {
+        font-size: 20px;
+        line-height: 26px;
+        font-weight: 600;
+        margin-bottom: 40px;
+        letter-spacing: -0.8px; }
+      .crediting__benefits .second .benefits {
+        display: grid;
+        grid-template-columns: 322px 321px 312px;
+        grid-column-gap: 52px;
+        margin-left: -12px; }
+        .crediting__benefits .second .benefits .illustration {
+          margin-bottom: 30px; }
+        .crediting__benefits .second .benefits div:not(:last-of-type) .common-text {
+          padding-left: 12px; }
+    @media (max-width: 767px) {
+      .crediting__benefits-block {
+        padding: 38px 21px 44px; }
+      .crediting__benefits .first {
+        grid-template-columns: 1fr; }
+        .crediting__benefits .first .text .title-h2 {
+          margin-bottom: 24px; }
+        .crediting__benefits .first .text .arrow-btn {
+          margin-top: 20px; }
+        .crediting__benefits .first .promo {
+          display: none; }
+      .crediting__benefits .second {
+        margin-top: 90px; }
+        .crediting__benefits .second .subtitle {
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 24px;
+          margin-bottom: 18px;
+          letter-spacing: .1px; }
+        .crediting__benefits .second .benefits {
+          grid-template-columns: 1fr;
+          grid-row-gap: 17px;
+          margin-left: 0; }
+          .crediting__benefits .second .benefits > div {
+            display: flex;
+            align-items: flex-start; }
+            .crediting__benefits .second .benefits > div:not(:last-of-type) .common-text {
+              padding-left: 0; }
+          .crediting__benefits .second .benefits .illustration {
+            height: 80px;
+            margin-right: 10px;
+            margin-left: -5px; }
+            .crediting__benefits .second .benefits .illustration img {
+              width: auto;
+              max-height: 100%; }
+          .crediting__benefits .second .benefits .common-text {
+            padding-left: 0;
+            margin-bottom: 0; } }
+    @media (min-width: 768px) and (max-width: 1199px) {
+      .crediting__benefits:before {
+        top: 54%;
+        height: 46%; }
+      .crediting__benefits-block {
+        padding: 48px 26px 46px; }
+      .crediting__benefits .first {
+        grid-template-columns: 355px 212px;
+        grid-column-gap: 21px; }
+        .crediting__benefits .first .text .title-h2 {
+          margin-bottom: 24px; }
+        .crediting__benefits .first .text .arrow-btn {
+          margin-top: 20px; }
+        .crediting__benefits .first .promo {
+          margin-top: 0; }
+          .crediting__benefits .first .promo img {
+            width: 100%; }
+      .crediting__benefits .second {
+        margin-top: 80px; }
+        .crediting__benefits .second .subtitle {
+          font-size: 18px;
+          line-height: 24px;
+          margin-bottom: 42px; }
+        .crediting__benefits .second .benefits {
+          grid-template-columns: 185px 189px 185px;
+          grid-column-gap: 30px;
+          margin-left: -5px; }
+          .crediting__benefits .second .benefits .illustration {
+            height: 80px;
+            margin-bottom: 20px; }
+            .crediting__benefits .second .benefits .illustration img {
+              width: auto;
+              height: 100%; }
+          .crediting__benefits .second .benefits div:not(:last-of-type) .common-text {
+            padding-left: 5px; }
+          .crediting__benefits .second .benefits .common-text {
+            font-size: 16px;
+            line-height: 24px;
+            padding-left: 5px; } }
+  .crediting .special-offers {
+    padding-top: 124px;
+    position: relative; }
+    .crediting .special-offers:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 436px;
+      background: #F4F8FA; }
+    .crediting .special-offers .container {
+      position: relative;
+      z-index: 3; }
+    .crediting .special-offers .special-offers__slider {
+      padding-left: 12px; }
+    @media (max-width: 767px) {
+      .crediting .special-offers {
+        padding-top: 62px; }
+        .crediting .special-offers .title-h2 {
+          margin-bottom: 34px; } }
+    @media (min-width: 768px) and (max-width: 1199px) {
+      .crediting .special-offers {
+        padding-top: 62px; }
+        .crediting .special-offers:before {
+          height: 326px; }
+        .crediting .special-offers .special-offers__slider {
+          padding-left: 0; }
+        .crediting .special-offers .special-offers__item {
+          max-width: 501px; }
+          .crediting .special-offers .special-offers__item .album {
+            width: 501px;
+            height: 267px;
+            margin-bottom: 21px; }
+            .crediting .special-offers .special-offers__item .album img {
+              width: 100%; }
+          .crediting .special-offers .special-offers__item .title {
+            font-size: 20px;
+            line-height: 28px; }
+          .crediting .special-offers .special-offers__item .text {
+            display: block;
+            font-size: 16px;
+            line-height: 22px; } }
+  .crediting__bank-partners {
+    padding-top: 139px; }
+    .crediting__bank-partners .title-h2 {
+      margin-bottom: 32px; }
+    .crediting__bank-partners .container {
+      position: relative; }
+      .crediting__bank-partners .container:before {
+        content: '';
+        position: absolute;
+        width: 324px;
+        height: 138px;
+        background: url(../assets/landing-promo-decor-2.svg);
+        background-repeat: repeat-x;
+        background-position-x: 13px;
+        top: -4px;
+        right: -131px;
+        z-index: 0; }
+    .crediting__bank-partners .bank-slider {
+      position: relative;
+      z-index: 1; }
+      .crediting__bank-partners .bank-slider .owl-stage-outer {
+        overflow: visible; }
+      .crediting__bank-partners .bank-slider .owl-dots {
+        display: flex;
+        justify-content: flex-start;
+        padding: 0 0 10px;
+        margin-top: 20px;
+        margin-left: -6px; }
+        .crediting__bank-partners .bank-slider .owl-dots button {
+          width: 13px;
+          height: 13px;
+          border-radius: 100%;
+          margin-right: 8px;
+          position: relative; }
+          .crediting__bank-partners .bank-slider .owl-dots button:before {
+            content: '';
+            position: absolute;
+            width: 13px;
+            height: 13px;
+            border: 1px solid #DD2A1B;
+            border-radius: 100%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            transition: all .2s; }
+          .crediting__bank-partners .bank-slider .owl-dots button:after {
+            content: '';
+            position: absolute;
+            width: 3px;
+            height: 3px;
+            background: #5F5F5F;
+            border-radius: 100%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            transition: all .2s; }
+          .crediting__bank-partners .bank-slider .owl-dots button:hover:before {
+            transform: translate(-50%, -50%) scale(0.8); }
+          .crediting__bank-partners .bank-slider .owl-dots button.active:before {
+            transform: translate(-50%, -50%) scale(1); }
+    .crediting__bank-partners .bank-slider__item {
+      width: 180px;
+      height: 120px;
+      background: #F4F8FA;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .crediting__bank-partners .bank-slider__item img {
+        width: auto;
+        max-width: 100%; }
+    @media (max-width: 767px) {
+      .crediting__bank-partners {
+        padding-top: 35px; }
+        .crediting__bank-partners .title-h2 {
+          margin-bottom: 34px; }
+        .crediting__bank-partners .container:before {
+          display: none; }
+        .crediting__bank-partners .bank-slider__item {
+          width: 153px;
+          height: 102px;
+          padding: 0 17px; } }
+    @media (min-width: 768px) and (max-width: 1199px) {
+      .crediting__bank-partners {
+        padding-top: 63px; }
+        .crediting__bank-partners .title-h2 {
+          margin-bottom: 33px; }
+        .crediting__bank-partners .container:before {
+          right: -4px; }
+        .crediting__bank-partners .bank-slider__item {
+          width: 153px;
+          height: 102px;
+          padding: 0 17px; } }
+  .crediting .corporation-clients__faq {
+    padding-top: 133px; }
+    @media (max-width: 767px) {
+      .crediting .corporation-clients__faq {
+        padding-top: 55px; } }
+    @media (min-width: 768px) and (max-width: 1199px) {
+      .crediting .corporation-clients__faq {
+        padding-top: 72px; } }
+  .crediting__consult-form {
+    padding-top: 75px;
+    padding-bottom: 19px; }
+    .crediting__consult-form-block {
+      border: 4px solid #DD2A1B;
+      padding: 54px 44px 50px;
+      border-radius: 25px 0 25px 0;
+      position: relative;
+      z-index: 2;
+      overflow: hidden; }
+    .crediting__consult-form .title-h2 {
+      width: 608px;
+      margin-bottom: 17px; }
+    .crediting__consult-form .form {
+      width: 608px; }
+      .crediting__consult-form .form .common-text {
+        letter-spacing: -0.1px;
+        margin-bottom: 31px; }
+      .crediting__consult-form .form .form-input {
+        margin-bottom: 0; }
+        .crediting__consult-form .form .form-input input {
+          background: #F4F8FA; }
+      .crediting__consult-form .form .agreement {
+        color: #5F5F5F;
+        font-size: 13px;
+        line-height: 18px; }
+        .crediting__consult-form .form .agreement a {
+          font-size: 13px;
+          line-height: 18px; }
+    .crediting__consult-form .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 20px;
+      grid-row-gap: 25px; }
+    .crediting__consult-form .form-actions {
+      margin-top: 31px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 20px; }
+    .crediting__consult-form .promo {
+      position: absolute;
+      right: 45px;
+      top: 26px;
+      width: 410px; }
+    @media (max-width: 767px) {
+      .crediting__consult-form {
+        padding-top: 40px; }
+        .crediting__consult-form .promo {
+          display: none; }
+        .crediting__consult-form-block {
+          padding: 37px 21px 16px; }
+        .crediting__consult-form .title-h2 {
+          width: auto;
+          margin-bottom: 41px; }
+        .crediting__consult-form .form {
+          width: 100%; }
+          .crediting__consult-form .form .common-text {
+            display: none; }
+        .crediting__consult-form .form-grid {
+          grid-template-columns: 1fr; }
+        .crediting__consult-form .form-actions {
+          grid-template-columns: 1fr;
+          grid-row-gap: 20px; } }
+    @media (min-width: 768px) and (max-width: 1199px) {
+      .crediting__consult-form {
+        padding-top: 90px; }
+        .crediting__consult-form-block {
+          padding: 38px 27px 30px; }
+        .crediting__consult-form .title-h2 {
+          margin-bottom: 28px; }
+        .crediting__consult-form .form {
+          width: 294px; }
+          .crediting__consult-form .form .common-text {
+            margin-bottom: 23px; }
+        .crediting__consult-form .form-grid {
+          grid-template-columns: 1fr; }
+        .crediting__consult-form .form-actions {
+          grid-template-columns: 1fr;
+          grid-row-gap: 20px; }
+        .crediting__consult-form .promo {
+          width: auto;
+          top: auto;
+          right: 9px;
+          bottom: -4px; } }
+  .crediting__mobile-calc {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transform: translateY(100%);
+    transition: all .5s ease-in-out;
+    background: white; }
+    .crediting__mobile-calc.active {
+      transform: translateY(0%); }
+    .crediting__mobile-calc .head-block {
+      width: 100%;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      background: #212121;
+      box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.24);
+      padding: 0 15px;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 24px;
+      color: white;
+      letter-spacing: -0.6px; }
+      .crediting__mobile-calc .head-block .logo {
+        margin-left: auto;
+        width: 70px;
+        margin-top: -9px; }
+      .crediting__mobile-calc .head-block .left {
+        display: flex;
+        align-items: center; }
+        .crediting__mobile-calc .head-block .left img {
+          margin-right: 10px; }
+    .crediting__mobile-calc .content {
+      display: flex;
+      width: 200vw;
+      height: calc(100vh - 56px);
+      transform: translateX(0);
+      transition: all .3s;
+      overflow: hidden; }
+    .crediting__mobile-calc .step-block {
+      width: 100vw;
+      padding: 30px 15px;
+      height: 100%;
+      overflow-y: scroll; }
+      .crediting__mobile-calc .step-block .form-select {
+        margin-bottom: 26px; }
+    .crediting__mobile-calc .step-2 {
+      margin-top: -14px; }
+    .crediting__mobile-calc .calc-actions {
+      margin-top: 30px; }
+      .crediting__mobile-calc .calc-actions .simple-btn {
+        width: 100%; }
+      .crediting__mobile-calc .calc-actions .common-text {
+        margin-top: 20px;
+        font-style: italic;
+        font-size: 14px;
+        line-height: 20px; }
+    .crediting__mobile-calc .subtitle {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 20px;
+      letter-spacing: -.6px; }
+    .crediting__mobile-calc .bank-offers-row .link {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.58px;
+      margin-left: 3px; }
+      .crediting__mobile-calc .bank-offers-row .link .text {
+        border-bottom: 1px dashed #4087BE; }
+      .crediting__mobile-calc .bank-offers-row .link:hover .text {
+        border-color: #DD2A1B; }
+    .crediting__mobile-calc .bank-offer-item {
+      background: #F4F8FA;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-row-gap: 18px;
+      padding: 20px 59px 30px 22px;
+      align-items: center;
+      margin-bottom: 10px; }
+      .crediting__mobile-calc .bank-offer-item .image {
+        width: 110px;
+        height: 50px;
+        background: white; }
+        .crediting__mobile-calc .bank-offer-item .image img {
+          max-width: 100%; }
+      .crediting__mobile-calc .bank-offer-item .description {
+        display: grid;
+        grid-template-columns: 98px 68px 80px;
+        grid-column-gap: 23px; }
+        .crediting__mobile-calc .bank-offer-item .description__item {
+          text-align: left; }
+          .crediting__mobile-calc .bank-offer-item .description__item .label {
+            font-size: 12px;
+            line-height: 18px;
+            margin-bottom: 5px;
+            color: #5F5F5F;
+            letter-spacing: -0.2px;
+            min-height: 36px; }
+          .crediting__mobile-calc .bank-offer-item .description__item .value {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 26px;
+            margin-right: 3px;
+            letter-spacing: 0.2px;
+            white-space: nowrap; }
+      .crediting__mobile-calc .bank-offer-item .action .simple-btn {
+        height: 55px;
+        padding-left: 32px;
+        margin-left: -5px; }
+    @media (min-width: 768px) {
+      .crediting__mobile-calc {
+        display: none; } }
   @media (max-width: 767px) {
     .crediting {
       padding-top: 32px;
