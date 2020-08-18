@@ -730,6 +730,8 @@ a, button, input {
   letter-spacing: 0.2px;
   text-transform: uppercase;
   padding: 0 35px; }
+  .simple-btn:hover {
+    text-decoration: none; }
   .simple-btn.--primary {
     background: #DD2A1B; }
     .simple-btn.--primary:hover {
