@@ -733,9 +733,11 @@ a, button, input {
   .simple-btn.--primary {
     background: #DD2A1B; }
     .simple-btn.--primary:hover {
-      background: #CE180F; }
+      background: #CE180F;
+      color: white; }
     .simple-btn.--primary:active {
-      background: #C00E08; }
+      background: #C00E08;
+      color: white; }
   .simple-btn.--black {
     background: #5F5F5F; }
     .simple-btn.--black:hover {
