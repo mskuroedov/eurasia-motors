@@ -6741,10 +6741,13 @@ body {
           transition: all .2s;
           letter-spacing: -.8px;
           padding-right: 20px; }
+        .service__details .details-slider__item a:hover {
+          text-decoration: none; }
         .service__details .details-slider__item:hover {
           text-decoration: none; }
           .service__details .details-slider__item:hover .text {
-            color: #DD2A1B; }
+            color: #DD2A1B;
+            text-decoration: none; }
     .service__details .simple-btn {
       margin-left: -5px; }
     @media (max-width: 767px) {
