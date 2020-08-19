@@ -740,6 +740,13 @@ a, button, input {
     .simple-btn.--primary:active {
       background: #C00E08;
       color: white; }
+  .simple-btn.--primary-outline {
+    border: 2px solid #DD2A1B;
+    color: #000;
+    background: transparent; }
+    .simple-btn.--primary-outline:hover {
+      background: #DD2A1B;
+      color: white; }
   .simple-btn.--black {
     background: #5F5F5F; }
     .simple-btn.--black:hover {
@@ -7943,6 +7950,58 @@ body {
           grid-template-columns: 1fr 1fr; }
       .service-booking .final {
         grid-template-columns: 1fr; } }
+
+.not-found {
+  padding-top: 99px;
+  padding-bottom: 50px;
+  overflow: hidden; }
+  .not-found .heading-1 {
+    margin-bottom: 19px; }
+  .not-found .common-text {
+    padding-right: 160px;
+    letter-spacing: -0.1px;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 30px; }
+  .not-found .simple-btn {
+    display: inline-flex;
+    align-items: center;
+    margin-left: -5px;
+    margin-right: 20px; }
+  .not-found .promo {
+    position: relative;
+    margin-top: -23px; }
+  @media (max-width: 767px) {
+    .not-found {
+      padding-top: 40px; }
+      .not-found .heading-1 {
+        width: 210px; }
+      .not-found .common-text {
+        padding-right: 0; }
+      .not-found .simple-btn {
+        display: flex;
+        justify-content: center;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 10px; }
+      .not-found .promo {
+        margin: 0 0 33px; }
+        .not-found .promo img {
+          width: 326px; } }
+  @media (min-width: 768px) and (max-width: 1199px) {
+    .not-found {
+      padding-top: 53px;
+      min-height: 317px; }
+      .not-found .common-text {
+        padding-right: 120px; }
+      .not-found .promo {
+        margin-top: -3px;
+        margin-left: -58px; }
+        .not-found .promo img {
+          width: 335.46px; } }
+  @media (min-width: 1200px) {
+    .not-found {
+      min-height: 578px; } }
 
 .catalog {
   padding-top: 12px;
