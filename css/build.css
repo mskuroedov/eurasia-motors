@@ -7951,6 +7951,1252 @@ body {
       .service-booking .final {
         grid-template-columns: 1fr; } }
 
+.repair {
+  background: white;
+  padding-top: 24px;
+  padding-bottom: 60px;
+  overflow: hidden; }
+  .repair__text {
+    padding-bottom: 123px; }
+    .repair__text .heading-1 {
+      margin-bottom: 40px; }
+    .repair__text .common-text {
+      margin-bottom: 10px;
+      padding-right: 80px; }
+    .repair__text .benefits {
+      margin-top: 40px;
+      display: grid;
+      grid-template-columns: repeat(3, 192px);
+      grid-column-gap: 40px; }
+      .repair__text .benefits .item .icon {
+        margin-bottom: 10px; }
+      .repair__text .benefits .item .common-text {
+        padding-right: 0;
+        letter-spacing: -0.2px; }
+      .repair__text .benefits .item .label-red {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 11px;
+        line-height: 26px;
+        letter-spacing: 0.7px;
+        text-transform: uppercase;
+        color: white;
+        padding: 0 7px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        background: #DD2A1B; }
+    .repair__text .promo {
+      margin-left: -7px;
+      margin-top: -7px;
+      position: relative; }
+      .repair__text .promo img {
+        position: relative;
+        z-index: 3; }
+      .repair__text .promo:before {
+        content: '';
+        position: absolute;
+        width: 324px;
+        height: 138px;
+        background: url(../assets/landing-promo-decor-2.svg);
+        background-repeat: repeat-x;
+        background-position-x: 13px;
+        z-index: 1;
+        bottom: -89px;
+        right: -146px; }
+      .repair__text .promo:after {
+        content: '';
+        z-index: 2;
+        position: absolute;
+        right: 0;
+        top: 50px;
+        background: #F4F8FA;
+        width: 411px;
+        height: 370px;
+        border-top-left-radius: 25px; }
+    @media (max-width: 767px) {
+      .repair__text {
+        padding-bottom: 40px; }
+        .repair__text .heading-1 {
+          margin-bottom: 29px; }
+        .repair__text .benefits {
+          margin-top: 0;
+          grid-template-columns: 1fr;
+          grid-row-gap: 15px; }
+          .repair__text .benefits .item {
+            display: flex;
+            align-items: flex-start; }
+            .repair__text .benefits .item .icon {
+              margin-right: 10px; }
+            .repair__text .benefits .item .common-text {
+              padding-right: 5px;
+              margin-bottom: 0; }
+            .repair__text .benefits .item .label-red {
+              margin-top: 9px; }
+        .repair__text .promo__col {
+          display: none; } }
+    @media (min-width: 768px) and (max-width: 1199px) {
+      .repair__text {
+        position: relative;
+        padding-bottom: 80px; }
+        .repair__text .heading-1 {
+          margin-bottom: 30px; }
+        .repair__text .common-text {
+          padding-right: 0; }
+        .repair__text .promo__col {
+          position: unset; }
+        .repair__text .promo {
+          position: unset; }
+          .repair__text .promo img {
+            width: 205px;
+            margin-left: 20px;
+            margin-top: 5px; }
+          .repair__text .promo:after {
+            top: 28px;
+            width: calc(50% - 126px);
+            height: 233px; }
+        .repair__text .benefits {
+          margin-top: 30px; }
+          .repair__text .benefits .item .label-red {
+            position: relative;
+            top: -1px; } }
+  .repair__map {
+    padding-bottom: 136px; }
+    .repair__map .title-h2 {
+      margin-bottom: 50px; }
+    .repair__map .info .title {
+      margin-top: 30px;
+      font-size: 14px;
+      line-height: 18px;
+      color: #5F5F5F;
+      margin-bottom: 10px; }
+      .repair__map .info .title:first-child {
+        margin-top: 22px; }
+    .repair__map .info .item {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 24px;
+      color: #000;
+      margin-bottom: 10px; }
+      .repair__map .info .item.sm {
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: -0.65px; }
+    .repair__map .map {
+      position: relative; }
+      .repair__map .map:before {
+        content: '';
+        position: absolute;
+        width: 324px;
+        height: 138px;
+        background: url(../assets/landing-promo-decor-2.svg);
+        background-repeat: repeat-x;
+        background-position-x: 13px;
+        z-index: 1;
+        bottom: -54px;
+        left: -111px; }
+      .repair__map .map iframe {
+        width: 100%;
+        height: 430px; }
+    @media (max-width: 767px) {
+      .repair__map {
+        padding-bottom: 55px; }
+        .repair__map .title-h2 {
+          margin-bottom: 32px; }
+        .repair__map .map:before {
+          display: none; } }
+    @media (min-width: 768px) and (max-width: 1199px) {
+      .repair__map {
+        padding-bottom: 74px; }
+        .repair__map .title-h2 {
+          margin-bottom: 44px; }
+        .repair__map .container {
+          position: relative; }
+          .repair__map .container:before {
+            content: '';
+            position: absolute;
+            width: 324px;
+            height: 138px;
+            background: url(../assets/landing-promo-decor-2.svg);
+            background-repeat: repeat-x;
+            background-position-x: 13px;
+            z-index: 1;
+            top: -49px;
+            right: -181px; }
+        .repair__map .info .title:first-child {
+          margin-top: 0; }
+        .repair__map .map:before {
+          bottom: -52px;
+          left: -107px; } }
+  .repair__calculate {
+    padding-bottom: 141px; }
+    .repair__calculate .calc-block {
+      border: 4px solid #DD2A1B;
+      border-radius: 25px 0 25px 0;
+      padding: 62px 46px 66px;
+      position: relative; }
+      .repair__calculate .calc-block .man {
+        position: absolute;
+        right: -143px;
+        bottom: 0; }
+      .repair__calculate .calc-block .title-h2 {
+        width: 310px;
+        margin-bottom: 28px; }
+      .repair__calculate .calc-block .subtitle {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: -.6px;
+        color: #000;
+        margin-bottom: 30px; }
+        .repair__calculate .calc-block .subtitle span {
+          color: #DD2A1B; }
+          .repair__calculate .calc-block .subtitle span img {
+            width: 30px;
+            height: 30px;
+            margin: -5px 0 0; }
+      .repair__calculate .calc-block .content {
+        width: 656px; }
+      .repair__calculate .calc-block .benefits {
+        width: 652px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 40px;
+        margin-bottom: 30px; }
+        .repair__calculate .calc-block .benefits .item {
+          display: flex;
+          align-items: flex-start; }
+          .repair__calculate .calc-block .benefits .item .icon {
+            flex: 0 0 40px;
+            margin-right: 10px; }
+          .repair__calculate .calc-block .benefits .item .common-text {
+            letter-spacing: -0.2px; }
+      .repair__calculate .calc-block .form .inputs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px; }
+        .repair__calculate .calc-block .form .inputs .form-input {
+          margin-bottom: 0; }
+        .repair__calculate .calc-block .form .inputs .form-input:not(.focus) input {
+          background: #F4F8FA; }
+        .repair__calculate .calc-block .form .inputs .dropzone {
+          grid-column: 1/3;
+          display: flex;
+          flex-wrap: wrap;
+          margin: 0 -1px;
+          width: calc(100% + 2px); }
+          .repair__calculate .calc-block .form .inputs .dropzone > div {
+            margin: 0 2px 2px; }
+        .repair__calculate .calc-block .form .inputs .dropzone-container {
+          height: 80px;
+          border: 2px dashed #DFDFDF;
+          padding: 15px 18px;
+          display: flex;
+          flex: 1;
+          justify-content: flex-start;
+          align-items: center; }
+          .repair__calculate .calc-block .form .inputs .dropzone-container .info {
+            display: flex;
+            align-items: center;
+            justify-content: center; }
+            .repair__calculate .calc-block .form .inputs .dropzone-container .info img {
+              margin-right: 15px; }
+            .repair__calculate .calc-block .form .inputs .dropzone-container .info .text {
+              text-align: center;
+              font-size: 16px;
+              line-height: 22px;
+              color: #5F5F5F; }
+        .repair__calculate .calc-block .form .inputs .dropzone-item {
+          position: relative; }
+          .repair__calculate .calc-block .form .inputs .dropzone-item .rmv {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            background: #5F5F5F;
+            transition: all .2s;
+            opacity: 0; }
+            .repair__calculate .calc-block .form .inputs .dropzone-item .rmv:hover {
+              background: #DD2A1B; }
+          .repair__calculate .calc-block .form .inputs .dropzone-item:hover .rmv {
+            opacity: 1; }
+      .repair__calculate .calc-block .form .actions {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 174px 310px;
+        grid-column-gap: 40px;
+        align-items: center; }
+        .repair__calculate .calc-block .form .actions .simple-btn {
+          margin-left: -5px; }
+        .repair__calculate .calc-block .form .actions .agreement {
+          font-size: 13px;
+          line-height: 18px;
+          color: #5F5F5F;
+          margin-bottom: 0; }
+          .repair__calculate .calc-block .form .actions .agreement a {
+            color: #4087BE; }
+            .repair__calculate .calc-block .form .actions .agreement a:hover {
+              text-decoration: none;
+              color: #DD2A1B; }
+    @media (max-width: 767px) {
+      .repair__calculate {
+        padding-bottom: 62px; }
+        .repair__calculate .calc-block {
+          padding: 38px 21px 37px; }
+          .repair__calculate .calc-block .title-h2 {
+            margin-bottom: 18px; }
+          .repair__calculate .calc-block .subtitle {
+            width: 230px;
+            font-size: 18px;
+            line-height: 24px;
+            margin-bottom: 23px; }
+            .repair__calculate .calc-block .subtitle span img {
+              width: 24px;
+              height: 24px;
+              margin: -2px 0; }
+          .repair__calculate .calc-block .benefits {
+            display: none; }
+          .repair__calculate .calc-block .content {
+            width: 100%; }
+          .repair__calculate .calc-block .form {
+            width: 100%; }
+            .repair__calculate .calc-block .form .inputs {
+              grid-template-columns: 1fr;
+              grid-row-gap: 25px; }
+              .repair__calculate .calc-block .form .inputs .dropzone {
+                grid-column: 1/2; }
+              .repair__calculate .calc-block .form .inputs .dropzone-container {
+                margin-top: -5px !important;
+                padding: 15px 13px; }
+                .repair__calculate .calc-block .form .inputs .dropzone-container .info {
+                  justify-content: flex-start; }
+                  .repair__calculate .calc-block .form .inputs .dropzone-container .info .text {
+                    text-align: left;
+                    font-size: 14px;
+                    line-height: 18px; }
+            .repair__calculate .calc-block .form .actions {
+              margin-top: 18px;
+              grid-template-columns: 1fr;
+              grid-row-gap: 30px; }
+              .repair__calculate .calc-block .form .actions .simple-btn {
+                margin-right: -5px; } }
+    @media (min-width: 768px) and (max-width: 1199px) {
+      .repair__calculate {
+        padding-bottom: 82px; }
+        .repair__calculate .calc-block {
+          padding: 48px 26px 42px; }
+          .repair__calculate .calc-block .man {
+            right: -49px; }
+          .repair__calculate .calc-block .title-h2 {
+            width: auto;
+            margin-bottom: 18px;
+            margin-left: 4px; }
+          .repair__calculate .calc-block .benefits {
+            width: 614px;
+            grid-column-gap: 20px; }
+          .repair__calculate .calc-block .subtitle {
+            width: 230px;
+            font-size: 18px;
+            line-height: 24px;
+            margin-bottom: 28px; }
+            .repair__calculate .calc-block .subtitle span img {
+              width: 24px;
+              height: 24px;
+              margin: -2px 0; }
+          .repair__calculate .calc-block .form {
+            width: 297px; }
+            .repair__calculate .calc-block .form .inputs {
+              grid-template-columns: 1fr;
+              grid-row-gap: 25px; }
+              .repair__calculate .calc-block .form .inputs .dropzone {
+                grid-column: 1/2; }
+              .repair__calculate .calc-block .form .inputs .dropzone-container {
+                margin-top: -5px !important;
+                padding: 15px 23px; }
+                .repair__calculate .calc-block .form .inputs .dropzone-container .info {
+                  justify-content: flex-start; }
+                  .repair__calculate .calc-block .form .inputs .dropzone-container .info .text {
+                    text-align: left;
+                    font-size: 14px;
+                    line-height: 18px; }
+            .repair__calculate .calc-block .form .actions {
+              margin-top: 18px;
+              grid-template-columns: 1fr;
+              grid-row-gap: 20px; }
+              .repair__calculate .calc-block .form .actions .simple-btn {
+                width: 174px;
+                display: flex;
+                align-items: center; }
+              .repair__calculate .calc-block .form .actions .agreement {
+                width: 350px; } }
+  .repair__calculator {
+    padding-bottom: 140px; }
+    .repair__calculator .title-h2 {
+      margin-bottom: 43px; }
+    .repair__calculator .check-list-nav .item {
+      display: inline-block;
+      height: 66px;
+      padding: 20px 50px;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 26px;
+      letter-spacing: -0.8px;
+      color: #5F5F5F;
+      cursor: pointer; }
+      .repair__calculator .check-list-nav .item[aria-expanded='true'] {
+        pointer-events: none; }
+      .repair__calculator .check-list-nav .item[aria-expanded='true'], .repair__calculator .check-list-nav .item:hover {
+        color: #5F5F5F;
+        background: #F4F8FA; }
+    @media (min-width: 1200px) {
+      .repair__calculator .nav-buttons-row {
+        width: 420px;
+        margin: 15px auto 20px; } }
+    .repair__calculator .check-list {
+      width: 509px;
+      transition: all 0s;
+      background: #F4F8FA;
+      padding-top: 40px; }
+      .repair__calculator .check-list .list-block {
+        padding: 0 50px 80px;
+        margin-bottom: 20px;
+        overflow-y: scroll;
+        position: relative;
+        max-height: 429px; }
+        .repair__calculator .check-list .list-block::-webkit-scrollbar-track {
+          background-color: transparent; }
+        .repair__calculator .check-list .list-block::-webkit-scrollbar {
+          width: 3px;
+          background-color: transparent; }
+        .repair__calculator .check-list .list-block::-webkit-scrollbar-thumb {
+          background-color: rgba(95, 95, 95, 0.6);
+          width: 3px; }
+      .repair__calculator .check-list .check-item {
+        position: relative;
+        margin-bottom: 15px;
+        padding-left: 36px; }
+        .repair__calculator .check-list .check-item input {
+          visibility: hidden;
+          width: 0;
+          height: 0;
+          position: absolute; }
+          .repair__calculator .check-list .check-item input:checked + label:after {
+            opacity: 1; }
+        .repair__calculator .check-list .check-item label {
+          cursor: pointer;
+          display: flex;
+          align-items: flex-end;
+          font-size: 16px;
+          line-height: 22px;
+          color: #5F5F5F;
+          margin-bottom: 0; }
+          .repair__calculator .check-list .check-item label .dots {
+            flex: 1;
+            border-bottom: 1px dashed #DFDFDF;
+            position: relative;
+            top: -4px;
+            margin: 0 3px; }
+          .repair__calculator .check-list .check-item label:before {
+            content: '';
+            width: 22px;
+            height: 22px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: white;
+            border: 1px solid #DFDFDF;
+            box-sizing: border-box;
+            border-radius: 4px; }
+          .repair__calculator .check-list .check-item label:after {
+            content: '';
+            position: absolute;
+            top: 6px;
+            left: 5px;
+            width: 13px;
+            height: 10px;
+            background: url(../assets/icons/tick.svg);
+            background-size: cover;
+            opacity: 0; }
+      .repair__calculator .check-list .price-block {
+        background: #DFEAF0;
+        padding: 32px 39px 30px 50px;
+        position: relative;
+        display: flex;
+        align-items: flex-start; }
+        .repair__calculator .check-list .price-block:before {
+          content: '';
+          width: 100%;
+          height: 99px;
+          position: absolute;
+          left: 0;
+          top: -119px;
+          background: linear-gradient(180deg, rgba(244, 248, 250, 0) 0%, #F4F8FA 100%); }
+        .repair__calculator .check-list .price-block .price {
+          margin-right: auto; }
+          .repair__calculator .check-list .price-block .price .label {
+            font-size: 16px;
+            line-height: 22px;
+            color: #5F5F5F; }
+          .repair__calculator .check-list .price-block .price .val {
+            color: #000;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 26px; }
+    .repair__calculator .auto .preview {
+      width: 100%; }
+      .repair__calculator .auto .preview img {
+        width: 100%; }
+    .repair__calculator .auto .auto-links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 54px; }
+      .repair__calculator .auto .auto-links .link {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        border-bottom: 1px dashed #4087BE;
+        color: #4087BE;
+        transition: all .2s; }
+        .repair__calculator .auto .auto-links .link:hover {
+          color: #DD2A1B;
+          border-color: #DD2A1B; }
+        .repair__calculator .auto .auto-links .link.--active {
+          color: #DD2A1B;
+          border-color: transparent; }
+      .repair__calculator .auto .auto-links .icon-360 {
+        margin: 0 20px;
+        display: block;
+        height: 50px;
+        width: 50px; }
+    .repair__calculator .benefits {
+      display: grid;
+      grid-template-columns: repeat(3, 160px);
+      grid-column-gap: 39px; }
+      .repair__calculator .benefits .item .icon {
+        margin-bottom: 10px; }
+      .repair__calculator .benefits .item .common-text {
+        letter-spacing: -.1px;
+        line-height: 22px; }
+    @media (max-width: 767px) {
+      .repair__calculator {
+        padding-bottom: 47px; }
+        .repair__calculator .title-h2 {
+          margin-bottom: 34px; }
+        .repair__calculator .nav-buttons-row__display {
+          margin-bottom: 40px; }
+        .repair__calculator .check-list-nav .item {
+          padding: 12px 34px;
+          height: 50px;
+          font-size: 16px;
+          color: #000; }
+        .repair__calculator .check-list {
+          padding-top: 20px;
+          width: 100%; }
+          .repair__calculator .check-list .list-block {
+            padding: 0 25px 80px;
+            max-height: 505px; }
+          .repair__calculator .check-list .check-item label {
+            align-items: flex-start; }
+            .repair__calculator .check-list .check-item label .name {
+              max-width: 159px; }
+            .repair__calculator .check-list .check-item label .dots {
+              align-self: flex-end; }
+            .repair__calculator .check-list .check-item label .val {
+              white-space: nowrap; }
+          .repair__calculator .check-list .price-block {
+            padding: 20px 23px 20px 20px; }
+            .repair__calculator .check-list .price-block .price {
+              margin-top: 3px; }
+            .repair__calculator .check-list .price-block .simple-btn {
+              width: 177px;
+              display: flex;
+              align-items: center; }
+        .repair__calculator .benefits {
+          margin-top: 40px;
+          grid-template-columns: 1fr; }
+          .repair__calculator .benefits .item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 14px; }
+            .repair__calculator .benefits .item .icon {
+              margin-right: 10px;
+              margin-bottom: 0; }
+            .repair__calculator .benefits .item .common-text {
+              line-height: 22px; } }
+    @media (min-width: 768px) and (max-width: 1199px) {
+      .repair__calculator {
+        padding-bottom: 90px; }
+        .repair__calculator .title-h2 {
+          margin-bottom: 34px; }
+        .repair__calculator .nav-buttons-row__display {
+          margin-bottom: 30px; }
+        .repair__calculator .check-list-nav .item {
+          padding: 12px 44px;
+          height: 50px;
+          font-size: 16px;
+          color: #000; }
+        .repair__calculator .check-list {
+          width: 100%;
+          padding-top: 30px; }
+          .repair__calculator .check-list .list-block {
+            padding: 0 30px 80px;
+            max-height: 439px; }
+          .repair__calculator .check-list .price-block {
+            padding: 20px 49px 20px 30px;
+            align-items: center; }
+            .repair__calculator .check-list .price-block .price {
+              display: flex;
+              align-items: center;
+              margin-right: 33px; }
+              .repair__calculator .check-list .price-block .price .label {
+                margin-right: 13px; }
+        .repair__calculator .benefits {
+          margin-top: 40px;
+          grid-template-columns: repeat(3, 192px);
+          grid-column-gap: 40px; } }
+  .repair__comparison {
+    padding-top: 65px;
+    padding-bottom: 46px;
+    position: relative; }
+    .repair__comparison:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: calc(50% - 65px);
+      height: 100%;
+      border-top-right-radius: 25px;
+      background: #F4F8FA; }
+    .repair__comparison .container {
+      position: relative; }
+      .repair__comparison .container:before {
+        content: '';
+        position: absolute;
+        width: 324px;
+        height: 138px;
+        background: url(../assets/landing-promo-decor-2.svg);
+        background-repeat: repeat-x;
+        background-position-x: 13px;
+        z-index: 1;
+        top: -63px;
+        right: -33px; }
+    .repair__comparison .title-h2 {
+      margin-bottom: 42px; }
+    .repair__comparison .right-block {
+      padding-left: 49px; }
+      .repair__comparison .right-block .title-h2 {
+        margin-bottom: 41px; }
+      .repair__comparison .right-block .comparison-item {
+        align-items: center;
+        margin-bottom: 38px;
+        margin-left: -5px; }
+    .repair__comparison .comparison-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 31px; }
+      .repair__comparison .comparison-item .icon {
+        width: 50px;
+        height: 50px;
+        margin-right: 15px; }
+        .repair__comparison .comparison-item .icon img {
+          width: 100%; }
+      .repair__comparison .comparison-item .text {
+        max-width: 400px; }
+        .repair__comparison .comparison-item .text .title {
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 26px;
+          margin-bottom: 5px;
+          letter-spacing: -0.8px; }
+        .repair__comparison .comparison-item .text .common-text {
+          margin-bottom: 0; }
+    @media (max-width: 767px) {
+      .repair__comparison {
+        padding-top: 43px;
+        padding-bottom: 30px; }
+        .repair__comparison:before {
+          width: 100%;
+          height: 477px; }
+        .repair__comparison .container:before {
+          display: none; }
+        .repair__comparison .title-h2 {
+          margin-bottom: 33px; }
+        .repair__comparison .comparison-item {
+          margin-bottom: 21px; }
+          .repair__comparison .comparison-item .icon {
+            min-width: 40px;
+            flex: 0 0 40px;
+            height: 40px;
+            margin-right: 10px; }
+          .repair__comparison .comparison-item .text .title {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 24px;
+            letter-spacing: -0.35px; }
+        .repair__comparison .right-block {
+          padding-left: 4px;
+          padding-top: 80px; }
+          .repair__comparison .right-block .title-h2 {
+            margin-bottom: 34px; }
+            .repair__comparison .right-block .title-h2 br {
+              display: none; }
+          .repair__comparison .right-block .comparison-item {
+            align-items: flex-start;
+            margin-left: 0;
+            margin-bottom: 15px; }
+            .repair__comparison .right-block .comparison-item .text .title {
+              font-weight: normal;
+              font-size: 16px;
+              line-height: 22px;
+              color: #5F5F5F;
+              letter-spacing: -0.1px; } }
+    @media (min-width: 768px) and (max-width: 1199px) {
+      .repair__comparison {
+        padding-top: 42px;
+        padding-bottom: 40px; }
+        .repair__comparison:before {
+          width: calc(50% - 10px); }
+        .repair__comparison .container:before {
+          top: -52px;
+          right: -262px; }
+        .repair__comparison .title-h2 {
+          width: 270px;
+          margin-bottom: 34px; }
+        .repair__comparison .comparison-item {
+          width: 271px;
+          margin-bottom: 20px;
+          flex-wrap: wrap; }
+          .repair__comparison .comparison-item .icon {
+            width: 40px;
+            min-height: 40px;
+            height: 40px;
+            margin-bottom: 10px; }
+          .repair__comparison .comparison-item .text {
+            width: 100%; }
+            .repair__comparison .comparison-item .text .common-text {
+              font-size: 16px;
+              line-height: 24px; }
+            .repair__comparison .comparison-item .text .title {
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 24px;
+              color: #5F5F5F;
+              letter-spacing: -.3px;
+              margin-bottom: 5px; }
+        .repair__comparison .right-block {
+          padding-left: 58px; }
+          .repair__comparison .right-block .title-h2 {
+            margin-bottom: 35px; }
+          .repair__comparison .right-block .comparison-item {
+            margin-left: 0;
+            margin-bottom: 14px; }
+            .repair__comparison .right-block .comparison-item .icon {
+              width: 50px;
+              height: 50px; } }
+  .repair__ba {
+    padding-top: 143px;
+    overflow: visible;
+    padding-bottom: 140px; }
+    .repair__ba .container {
+      position: relative; }
+      .repair__ba .container:before {
+        content: '';
+        position: absolute;
+        width: 324px;
+        height: 138px;
+        background: url(../assets/landing-promo-decor-2.svg);
+        background-repeat: repeat-x;
+        background-position-x: 13px;
+        z-index: 1;
+        bottom: 30px;
+        left: -325px; }
+    .repair__ba .title-h2 {
+      margin-bottom: 43px; }
+    .repair__ba .ba-text .common-text {
+      letter-spacing: -.1px; }
+    .repair__ba .ba-text .promo {
+      margin-top: 30px;
+      display: flex;
+      align-items: flex-start; }
+      .repair__ba .ba-text .promo .icon {
+        margin-right: 10px; }
+      .repair__ba .ba-text .promo .title {
+        color: #DD2A1B;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 5px;
+        letter-spacing: -.3px; }
+    .repair__ba .ba-slider {
+      margin-left: 440px;
+      margin-top: -181px; }
+      .repair__ba .ba-slider .owl-dots {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 20px;
+        margin-left: -6px; }
+        .repair__ba .ba-slider .owl-dots button {
+          width: 13px;
+          height: 13px;
+          border-radius: 100%;
+          margin-right: 8px;
+          position: relative; }
+          .repair__ba .ba-slider .owl-dots button:before {
+            content: '';
+            position: absolute;
+            width: 13px;
+            height: 13px;
+            border: 1px solid #DD2A1B;
+            border-radius: 100%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            transition: all .2s; }
+          .repair__ba .ba-slider .owl-dots button:after {
+            content: '';
+            position: absolute;
+            width: 3px;
+            height: 3px;
+            background: #5F5F5F;
+            border-radius: 100%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            transition: all .2s; }
+          .repair__ba .ba-slider .owl-dots button:hover:before {
+            transform: translate(-50%, -50%) scale(0.8); }
+          .repair__ba .ba-slider .owl-dots button.active:before {
+            transform: translate(-50%, -50%) scale(1); }
+      .repair__ba .ba-slider__item {
+        display: flex; }
+        .repair__ba .ba-slider__item .before, .repair__ba .ba-slider__item .after {
+          position: relative; }
+          .repair__ba .ba-slider__item .before .label, .repair__ba .ba-slider__item .after .label {
+            position: absolute;
+            width: 74px;
+            height: 20px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 11px;
+            line-height: 20px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            background: linear-gradient(94.45deg, #000000 0%, #5F5F5F 94.36%); }
+            .repair__ba .ba-slider__item .before .label:before, .repair__ba .ba-slider__item .after .label:before {
+              content: '';
+              position: absolute;
+              top: -5px;
+              width: 5px;
+              height: 5px;
+              background: #000000; }
+        .repair__ba .ba-slider__item .before .label {
+          top: 15px;
+          right: -5px;
+          z-index: 2;
+          background: linear-gradient(94.45deg, #000000 0%, #5F5F5F 94.36%); }
+          .repair__ba .ba-slider__item .before .label:before {
+            right: 0;
+            clip-path: polygon(0 0, 0% 100%, 100% 100%); }
+        .repair__ba .ba-slider__item .after .label {
+          top: 40px;
+          left: -5px;
+          background: linear-gradient(94.45deg, #5F5F5F 0%, #000000 94.36%); }
+          .repair__ba .ba-slider__item .after .label:before {
+            left: 0;
+            clip-path: polygon(100% 0, 0% 100%, 100% 100%); }
+    @media (max-width: 767px) {
+      .repair__ba {
+        padding-top: 12px;
+        padding-bottom: 50px; }
+        .repair__ba .title-h2 {
+          margin-bottom: 24px; }
+        .repair__ba .ba-text .promo {
+          margin: 20px 0; }
+          .repair__ba .ba-text .promo .title {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 24px; }
+          .repair__ba .ba-text .promo .common-text {
+            letter-spacing: 0.06px; }
+        .repair__ba .ba-slider {
+          margin: 0; }
+          .repair__ba .ba-slider__item {
+            display: flex;
+            align-items: flex-start; }
+            .repair__ba .ba-slider__item .before, .repair__ba .ba-slider__item .after {
+              width: 50%; }
+              .repair__ba .ba-slider__item .before .label, .repair__ba .ba-slider__item .after .label {
+                font-size: 9px;
+                width: 66px;
+                height: 20px;
+                line-height: 20px; }
+              .repair__ba .ba-slider__item .before img, .repair__ba .ba-slider__item .after img {
+                width: 100%; }
+            .repair__ba .ba-slider__item .before .label {
+              top: 6px; }
+            .repair__ba .ba-slider__item .after .label {
+              top: 30px; } }
+    @media (min-width: 768px) and (max-width: 1199px) {
+      .repair__ba {
+        padding-top: 73px;
+        padding-bottom: 70px;
+        overflow: hidden; }
+        .repair__ba .title-h2 {
+          margin-bottom: 33px; }
+        .repair__ba .container:before {
+          display: none; }
+        .repair__ba .ba-text .promo {
+          margin-top: 20px;
+          margin-bottom: 30px; }
+          .repair__ba .ba-text .promo .title {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 24px; }
+          .repair__ba .ba-text .promo .common-text {
+            letter-spacing: 0.06px; }
+        .repair__ba .ba-slider {
+          margin: 0; }
+          .repair__ba .ba-slider .owl-dots {
+            margin-top: 30px;
+            margin-left: -5px; }
+          .repair__ba .ba-slider .owl-stage-outer {
+            overflow: visible; }
+          .repair__ba .ba-slider__item {
+            width: 502px;
+            max-height: 190px;
+            justify-content: flex-start; }
+            .repair__ba .ba-slider__item .before, .repair__ba .ba-slider__item .after {
+              width: 50%; }
+            .repair__ba .ba-slider__item img {
+              width: auto;
+              height: 100%; } }
+  .repair__insurance {
+    padding-top: 3px;
+    padding-bottom: 120px; }
+    .repair__insurance .container {
+      position: relative; }
+      .repair__insurance .container:before {
+        content: '';
+        position: absolute;
+        width: 324px;
+        height: 138px;
+        background: url(../assets/landing-promo-decor-2.svg);
+        background-repeat: repeat-x;
+        background-position-x: 13px;
+        z-index: 1;
+        top: 67px;
+        right: -81px; }
+    .repair__insurance .title-h2 {
+      margin-bottom: 42px; }
+    .repair__insurance .ko-item {
+      background: #F4F8FA;
+      height: 100%;
+      position: relative;
+      z-index: 5; }
+      .repair__insurance .ko-item .heading {
+        display: flex;
+        align-items: center; }
+        .repair__insurance .ko-item .heading .icon {
+          margin-right: 20px;
+          width: 120px;
+          height: 120px; }
+          .repair__insurance .ko-item .heading .icon img {
+            max-width: 100%; }
+        .repair__insurance .ko-item .heading .title {
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 26px;
+          margin-top: -15px; }
+        .repair__insurance .ko-item .heading a {
+          margin-left: auto;
+          display: block;
+          width: 24px;
+          height: 24px;
+          margin-right: 20px; }
+          @media (min-width: 768px) {
+            .repair__insurance .ko-item .heading a {
+              display: none; } }
+          .repair__insurance .ko-item .heading a[aria-expanded='true'] {
+            background: url(../assets/insurance/co/minus.svg); }
+          .repair__insurance .ko-item .heading a[aria-expanded='false'] {
+            background: url(../assets/insurance/co/plus.svg); }
+      .repair__insurance .ko-item .text {
+        height: 100%;
+        margin-left: 140px;
+        margin-top: -43px;
+        padding-right: 40px;
+        padding-bottom: 49px; }
+        .repair__insurance .ko-item .text .common-text {
+          margin-bottom: 30px;
+          letter-spacing: 0.1px; }
+        .repair__insurance .ko-item .text .simple-btn {
+          margin-left: -5px; }
+    @media (max-width: 767px) {
+      .repair__insurance {
+        padding-top: 13px;
+        padding-bottom: 50px; }
+        .repair__insurance .title-h2 {
+          margin-bottom: 33px; }
+        .repair__insurance .container:before {
+          display: none; }
+        .repair__insurance .ko-item {
+          margin-bottom: 5px;
+          height: auto; }
+          .repair__insurance .ko-item .heading .icon {
+            width: 46px;
+            height: 46px;
+            margin-right: 10px;
+            margin-left: 20px; }
+          .repair__insurance .ko-item .heading .title {
+            font-size: 16px;
+            line-height: 24px;
+            margin: 0; }
+          .repair__insurance .ko-item .text {
+            margin-top: 0;
+            margin-left: 0;
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-bottom: 40px; }
+            .repair__insurance .ko-item .text.collapsing {
+              transition: 0s; }
+            .repair__insurance .ko-item .text .common-text {
+              margin-bottom: 24px;
+              letter-spacing: 0.2px; }
+            .repair__insurance .ko-item .text .simple-btn {
+              display: flex;
+              align-items: center;
+              text-align: left;
+              line-height: 18px;
+              width: 262px; } }
+    @media (min-width: 768px) and (max-width: 1199px) {
+      .repair__insurance {
+        padding-top: 12px;
+        padding-bottom: 40px; }
+        .repair__insurance .title-h2 {
+          margin-bottom: 33px; }
+        .repair__insurance .container:before {
+          top: 68px;
+          right: -149px; }
+        .repair__insurance .ko-item {
+          height: auto;
+          margin-bottom: 40px; }
+          .repair__insurance .ko-item .heading .icon {
+            width: 96px;
+            height: 96px;
+            margin-right: 20px; }
+          .repair__insurance .ko-item .heading .title {
+            margin-top: 12px; }
+          .repair__insurance .ko-item .text {
+            margin-left: 117px;
+            margin-top: -19px;
+            padding-bottom: 39px;
+            padding-right: 50px; }
+            .repair__insurance .ko-item .text.collapse {
+              display: block; } }
+    @media (min-width: 1199px) {
+      .repair__insurance .ko-item .text.collapse {
+        display: block; } }
+  .repair__consult {
+    padding-bottom: 40px; }
+    .repair__consult .consult-block {
+      border: 4px solid #DD2A1B;
+      border-radius: 25px 0 25px 0;
+      padding: 54px 50px 67px 46px;
+      position: relative; }
+      .repair__consult .consult-block .title-h2 {
+        margin-bottom: 15px; }
+      .repair__consult .consult-block .common-text {
+        letter-spacing: -.1px;
+        margin-bottom: 30px; }
+      .repair__consult .consult-block .form {
+        width: 754px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 20px; }
+        .repair__consult .consult-block .form .form-input:not(.focus) input {
+          background: #F4F8FA; }
+      .repair__consult .consult-block .actions {
+        display: grid;
+        grid-template-columns: 238px 365px;
+        grid-column-gap: 20px;
+        align-items: center; }
+        .repair__consult .consult-block .actions .agreement {
+          font-size: 13px;
+          line-height: 18px;
+          color: #5F5F5F;
+          margin-bottom: 0;
+          letter-spacing: -.2px; }
+          .repair__consult .consult-block .actions .agreement a {
+            color: #4087BE; }
+            .repair__consult .consult-block .actions .agreement a:hover {
+              text-decoration: none;
+              color: #DD2A1B; }
+      .repair__consult .consult-block .promo {
+        position: absolute;
+        right: -7px;
+        bottom: 0; }
+    @media (max-width: 767px) {
+      .repair__consult {
+        padding-bottom: 20px; }
+        .repair__consult .consult-block {
+          padding: 39px 21px 37px 21px; }
+          .repair__consult .consult-block .promo {
+            display: none; }
+          .repair__consult .consult-block .title-h2 {
+            margin-bottom: 8px; }
+          .repair__consult .consult-block .common-text {
+            margin-bottom: 23px; }
+          .repair__consult .consult-block .form {
+            width: 100%;
+            grid-template-columns: 1fr;
+            grid-row-gap: 2px; }
+          .repair__consult .consult-block .actions {
+            grid-template-columns: 1fr;
+            grid-row-gap: 21px;
+            margin-top: -4px; }
+            .repair__consult .consult-block .actions .simple-btn {
+              width: 238px;
+              margin-left: -5px; } }
+    @media (min-width: 768px) and (max-width: 1199px) {
+      .repair__consult {
+        padding-bottom: 60px; }
+        .repair__consult .consult-block {
+          padding: 38px 50px 37px 26px;
+          overflow: hidden; }
+          .repair__consult .consult-block .title-h2 {
+            margin-bottom: 13px; }
+          .repair__consult .consult-block .common-text {
+            margin-bottom: 33px; }
+          .repair__consult .consult-block .form {
+            width: 298px;
+            grid-template-columns: 1fr;
+            grid-row-gap: 2px; }
+          .repair__consult .consult-block .actions {
+            display: block;
+            margin-top: -4px; }
+            .repair__consult .consult-block .actions .simple-btn {
+              width: 238px;
+              margin-left: -5px;
+              margin-bottom: 21px; }
+            .repair__consult .consult-block .actions .agreement {
+              width: 298.28px; }
+          .repair__consult .consult-block .promo {
+            right: 12px;
+            bottom: -9px; }
+            .repair__consult .consult-block .promo img {
+              width: 308px; } }
+  .repair__partners {
+    padding-top: 3px;
+    padding-bottom: 104px; }
+    @media (min-width: 1200px) {
+      .repair__partners .text-block {
+        width: 315px; } }
+    .repair__partners .title-h2 {
+      margin-bottom: 33px; }
+    @media (min-width: 1200px) {
+      .repair__partners .r-partners-slider {
+        margin-top: -166px;
+        margin-left: 385px; } }
+    .repair__partners .r-partners-slider .owl-dots {
+      display: flex;
+      justify-content: flex-start;
+      margin-top: 20px;
+      margin-left: -6px; }
+      .repair__partners .r-partners-slider .owl-dots button {
+        width: 13px;
+        height: 13px;
+        border-radius: 100%;
+        margin-right: 8px;
+        position: relative; }
+        .repair__partners .r-partners-slider .owl-dots button:before {
+          content: '';
+          position: absolute;
+          width: 13px;
+          height: 13px;
+          border: 1px solid #DD2A1B;
+          border-radius: 100%;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%) scale(0);
+          transition: all .2s; }
+        .repair__partners .r-partners-slider .owl-dots button:after {
+          content: '';
+          position: absolute;
+          width: 3px;
+          height: 3px;
+          background: #5F5F5F;
+          border-radius: 100%;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          transition: all .2s; }
+        .repair__partners .r-partners-slider .owl-dots button:hover:before {
+          transform: translate(-50%, -50%) scale(0.8); }
+        .repair__partners .r-partners-slider .owl-dots button.active:before {
+          transform: translate(-50%, -50%) scale(1); }
+    .repair__partners .r-partners-slider__item {
+      width: 180px;
+      height: 120px;
+      background: #F4F8FA;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .repair__partners .r-partners-slider__item img {
+        width: auto;
+        max-width: 100%;
+        max-height: 100%; }
+    @media (max-width: 767px) {
+      .repair__partners {
+        padding-top: 7px;
+        padding-bottom: 61px; }
+        .repair__partners .title-h2 {
+          margin-bottom: 24px; }
+        .repair__partners .common-text {
+          margin-bottom: 19px; }
+        .repair__partners .r-partners-slider .owl-stage-outer {
+          overflow: visible; }
+        .repair__partners .r-partners-slider__item {
+          width: 119px;
+          height: 79.07px;
+          padding: 12px 13px; } }
+    @media (min-width: 768px) and (max-width: 1199px) {
+      .repair__partners {
+        padding-bottom: 60px; }
+        .repair__partners .title-h2 {
+          margin-bottom: 24px; }
+        .repair__partners .common-text {
+          margin-bottom: 29px; }
+        .repair__partners .r-partners-slider .owl-stage-outer {
+          overflow: visible; }
+        .repair__partners .r-partners-slider__item {
+          width: 153px;
+          height: 102px;
+          padding: 0 17px; } }
+  @media (max-width: 767px) {
+    .repair {
+      padding-top: 32px;
+      padding-bottom: 42px; }
+      .repair .breadcrumbs {
+        display: none; } }
+  @media (min-width: 768px) and (max-width: 1199px) {
+    .repair {
+      padding-top: 32px;
+      padding-bottom: 40px;
+      position: relative; }
+      .repair .breadcrumbs {
+        display: none; } }
+
 .not-found {
   padding-top: 99px;
   padding-bottom: 50px;
