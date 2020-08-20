@@ -1,20 +1,19 @@
 //before-after slider
-let sliders = $('.ba-slider')
-sliders.each((i, item) => {
-    $(item).owlCarousel({
-        margin: 20,
-        dots: true,
-        loop: false,
-        responsive: {
-            0: {
-                items: 1
-            },
-            768: {
-                autoWidth: true,
-            }
+let baSliders = $('.ba-slider')
+baSliders.owlCarousel({
+    margin: 20,
+    dots: true,
+    loop: false,
+    responsive: {
+        0: {
+            items: 1
+        },
+        768: {
+            autoWidth: true,
         }
-    })
+    }
 })
+
 //partners slider
 var pSlider = $('.r-partners-slider');
 pSlider.owlCarousel({
