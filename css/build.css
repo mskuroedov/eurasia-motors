@@ -1814,7 +1814,7 @@ body {
     font-weight: normal;
     font-size: 14px;
     line-height: 20px;
-    letter-spacing: .4px;
+    letter-spacing: 0;
     color: #4087BE;
     margin-right: 5px;
     white-space: nowrap;
@@ -1836,12 +1836,9 @@ body {
       .breadcrumbs__item {
         font-size: 15px;
         line-height: 20px;
-        letter-spacing: -0.9px;
         margin-right: 6px; }
         .breadcrumbs__item:after {
-          margin-left: 10px; }
-        .breadcrumbs__item:last-of-type {
-          letter-spacing: 0; } }
+          margin-left: 10px; } }
   @media (min-width: 1200px) {
     .breadcrumbs {
       margin-bottom: 30px; } }
