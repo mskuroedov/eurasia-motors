@@ -7046,7 +7046,7 @@ body {
   .mobile-app .step-block {
     width: 100vw;
     min-width: 100vw;
-    padding: 30px 15px;
+    padding: 30px 15px 135px;
     height: 100%;
     overflow-y: scroll; }
     .mobile-app .step-block .form-select {
@@ -7212,6 +7212,7 @@ body {
           margin-bottom: 10px;
           border-radius: 4px; }
           .mobile-app .service .service-item__info .preview img {
+            width: 100%;
             max-width: 100%; }
         .mobile-app .service .service-item__info input {
           width: 0;
@@ -7367,9 +7368,6 @@ body {
       .mobile-app .calendar .time div.--active {
         background: #DD2A1B;
         color: white; }
-  @media (min-width: 768px) {
-    .mobile-app {
-      display: none; } }
 
 .service-booking {
   background: white;
