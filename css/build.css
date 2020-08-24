@@ -2057,7 +2057,7 @@ body {
     font-weight: 600;
     font-size: 18px;
     line-height: 26px;
-    letter-spacing: -1.2px;
+    letter-spacing: 0;
     margin-right: 9px; }
   .official-dealer__images {
     display: flex; }
