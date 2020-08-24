@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,600,700,900&display=swap");
 @import url(../assets/fonts/Magistal/stylesheet.css);
 @media (max-width: 1200px) {
   .container {
@@ -727,7 +727,7 @@ a, button, input {
   font-weight: bold;
   font-size: 13px;
   line-height: 54px;
-  letter-spacing: 0.2px;
+  letter-spacing: 0;
   text-transform: uppercase;
   padding: 0 35px; }
   .simple-btn:hover {
@@ -783,7 +783,7 @@ a, button, input {
     line-height: 20px;
     display: flex;
     align-items: center;
-    letter-spacing: 0.4px;
+    letter-spacing: 0;
     color: #000; }
   .arrow-btn:hover {
     text-decoration: none; }
