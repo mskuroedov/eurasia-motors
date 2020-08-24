@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:400,600,700,900&display=swap");
+@import url(../assets/fonts/Lato/lato.css);
 @import url(../assets/fonts/Magistal/stylesheet.css);
 @media (max-width: 1200px) {
   .container {
